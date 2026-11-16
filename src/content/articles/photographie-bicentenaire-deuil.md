@@ -7,9 +7,10 @@ date: 2026-11-16
 auteur: "[Signature]"
 une: true
 image:
-  alt: "Barbara Kruger, installation dans la Rotonde de la Bourse de Commerce"
-  legende: "Barbara Kruger, <i>Untitled (Remember me)</i>, 1988–2020. Vue d’installation, Bourse de Commerce – Pinault Collection."
-  credit: "© [Crédit photographique]"
+  src: ./images/niepce.jpg
+  alt: "Nicéphore Niépce, Point de vue du Gras, la plus ancienne photographie conservée"
+  legende: "Nicéphore Niépce, <i>Point de vue du Gras</i>, vers 1826–1827. Héliographie sur étain. Harry Ransom Center, université du Texas à Austin."
+  credit: "Domaine public, via Wikimedia Commons"
 cartel:
   - titre: "Remember Me. Chefs-d’œuvre photographiques de la Collection Pinault"
     lieu: Bourse de Commerce

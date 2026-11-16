@@ -6,7 +6,10 @@ sujet: Marché
 date: 2026-11-08
 auteur: "[Signature]"
 image:
-  alt: "Nef du Grand Palais pendant Art Basel Paris"
+  src: ./images/grand-palais-1900.jpg
+  alt: "Le Grand Palais photographié par Eugène Trutat pendant l’Exposition universelle de 1900"
+  legende: "Eugène Trutat, <i>Grand Palais des Beaux-Arts, Exposition universelle</i>, octobre 1900."
+  credit: "Muséum de Toulouse — domaine public, via Wikimedia Commons"
 
 cartel:
   - titre: Art Basel Paris

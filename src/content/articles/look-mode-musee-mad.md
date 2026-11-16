@@ -6,7 +6,10 @@ sujet: Mode
 date: 2026-11-10
 auteur: "[Signature]"
 image:
-  alt: "Silhouettes dans la nef du musée des Arts décoratifs"
+  src: ./images/pavillon-de-marsan.jpg
+  alt: "Le pavillon de Marsan, siège du musée des Arts décoratifs, vu du jardin des Tuileries"
+  legende: "Le pavillon de Marsan, aile du Louvre où le musée des Arts décoratifs est installé depuis 1905."
+  credit: "Photo couscouschocolat, CC BY 2.0, via Wikimedia Commons"
 
 cartel:
   - titre: Look ! 40 ans de mode au musée
