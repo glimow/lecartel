@@ -6,7 +6,10 @@ sujet: Architecture
 date: 2026-11-15
 auteur: "Ariane"
 image:
-  alt: "Façade du Centre Pompidou sous échafaudages"
+  src: ./images/beaubourg-depuis-montmartre.jpg
+  alt: "Le Centre Pompidou vu de Montmartre, ses tuyaux colorés au-dessus des toits de Paris, tours de la Défense à l’horizon"
+  legende: "Le Centre Pompidou (Renzo Piano et Richard Rogers, 1977) vu depuis Montmartre."
+  credit: "Photo Zairon, CC BY-SA 4.0, via Wikimedia Commons ; architecture © Renzo Piano et Richard Rogers [droits à régulariser]"
 
 cartel:
   - titre: Centre Pompidou

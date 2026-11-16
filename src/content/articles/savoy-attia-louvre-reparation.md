@@ -8,9 +8,10 @@ auteur: "Étienne"
 dossier: faut-il-bruler-le-louvre
 brouillon: false
 image:
+  src: ./images/hubert-robert-grande-galerie-ruines.jpg
   alt: "Hubert Robert, Vue imaginaire de la Grande Galerie du Louvre en ruines, 1796"
   legende: "Hubert Robert, <i>Vue imaginaire de la Grande Galerie du Louvre en ruines</i>, 1796. Musée du Louvre."
-  credit: "Domaine public"
+  credit: "Domaine public, via Wikimedia Commons (Web Gallery of Art)"
 cartel:
   - titre: "Les Hôtes du Louvre — Kader Attia et Elizabeth Peyton"
     lieu: Musée du Louvre, salle de la Chapelle
@@ -58,6 +59,8 @@ D’où l’ambiguïté de sa présence à l’auditorium. Inviter l’autrice d
 ## La vitrine vide
 
 La dernière leçon de Savoy s’intitule « Droit dans les yeux. Le Louvre en face ». Le musée la présente comme la recherche d’un lieu « post-sacralisé », capable d’intégrer à l’expérience du visiteur l’histoire de la formation de ses collections.[^14] L’expression est juste, et elle oblige. Regarder le Louvre en face, ce n’est pas raconter l’histoire de ses acquisitions sur un cartel de plus. C’est accepter que certaines salles portent la trace de ce qui en est parti.
+
+![La galerie d’Apollon en 1890, vue stéréoscopique : plafonds peints, vitrines alignées sur le parquet](./images/galerie-apollon-1890.jpg "J. F. Jarvis | La galerie d’Apollon au Louvre, vue stéréoscopique, 1890. Musée Carnavalet | CC0 Paris Musées")
 
 Le Louvre sait ce qu’est une vitrine vidée. Il l’a appris il y a treize mois, dans la galerie d’Apollon, et ne l’avait pas choisi.[^15] Les restitutions que la loi rend désormais possibles en produiront d’autres, choisies celles-là. Entre ces deux vides, il y a toute la différence entre une blessure subie et une réparation consentie.
 
