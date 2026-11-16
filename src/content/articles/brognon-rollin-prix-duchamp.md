@@ -1,80 +1,69 @@
 ---
-titre: "Brognon Rollin, et la « scène française » en exil"
-chapo: "Au Musée d’Art Moderne, où le Prix Marcel Duchamp attend la réouverture de Beaubourg, les lauréats exposent des jetons de sobriété figés dans des machines à sous. Tout, dans cette œuvre, est loin de chez soi : le prix, les artistes, les jetons, et ceux qui ont arrêté."
-rubrique: psyche
+titre: "Brognon Rollin, la maison gagne toujours"
+chapo: "Le Prix Marcel Duchamp 2026 couronne quatre machines de fête foraine remplies de jetons de sobriété rachetés en ligne. L’œuvre touche juste quand elle se retient de montrer. Quand elle collectionne, elle prend la place du casino."
+rubrique: critiques
 sujet: Prix Marcel Duchamp
 date: 2026-11-16
 auteur: "Irène"
 brouillon: false
 image:
-  alt: "Brognon Rollin, 5376 Years, 1892 Months, 1110 Days, 1201 Hours, 2026, Musée d’Art Moderne de Paris"
-  legende: "Brognon Rollin, <i>5376 Years, 1892 Months, 1110 Days, 1201 Hours</i>, 2026. Prix Marcel Duchamp 2026, Musée d’Art Moderne de Paris."
-  credit: "© [Visuel presse à demander au MAM]"
+  src: ./images/duchamp-obligation-monte-carlo.jpg
+  alt: "Obligation de la Roulette de Monte-Carlo de Marcel Duchamp : un titre vert en forme de tapis de jeu, avec au centre une roue de roulette et le visage de Duchamp couvert de mousse à raser"
+  legende: "Marcel Duchamp, <i>Obligation pour la roulette de Monte-Carlo</i>, 1924, n° 12. Photographie de Man Ray, signatures de Rrose Sélavy et de Marcel Duchamp."
+  credit: "© Association Marcel Duchamp / ADAGP ; © Man Ray 2015 Trust / ADAGP [droits à régulariser]. Scan EDHAC e.V., via Wikimedia Commons"
 cartel:
   - titre: "Prix Marcel Duchamp 2026"
     lieu: Musée d’Art Moderne de Paris
     dates: "2.10.26 → 7.02.27"
-    details: "Accès libre · Comm. Odile Burluraux et Nicolas Liucci-Goutnikov"
-tags: [Prix Marcel Duchamp, Psychanalyse, Addiction, MAM, Brognon Rollin]
+    details: "Entrée libre · Comm. Odile Burluraux et Nicolas Liucci-Goutnikov · Nommés : Joël Andrianomearisoa, Brognon Rollin, Laura Henno, Josèfa Ntjam"
+tags: [Prix Marcel Duchamp, Brognon Rollin, Addiction, MAM, Félix González-Torres]
 ---
 
-Un jeton rond, à peine plus grand qu’une pièce de monnaie. On y lit *9 Months*. Dans les groupes de parole, on le remet à celui ou celle qui tient depuis neuf mois. Comme des centaines d’autres, il a été trouvé sur un forum ou sur un site de seconde main.
+En novembre 1924, Marcel Duchamp fait imprimer trente obligations de cinq cents francs pour financer une martingale à la roulette de Monte-Carlo. Le titre imite un tapis de jeu vert. Au centre, dans le cylindre de la roue, Man Ray a photographié le visage de Duchamp couvert de mousse à raser, les cheveux dressés en deux cornes. Le président du conseil d’administration qui signe en bas à gauche s’appelle Rrose Sélavy ; l’administrateur, à droite, Marcel Duchamp. Les coupons promettent vingt pour cent d’intérêt.[^1] Duchamp part ensuite jouer son système au casino, quelques semaines, et en revient sans avoir rien gagné de notable ni perdu grand-chose [À vérifier]. Il avait trouvé le moyen de jouer sans rien attendre du jeu.
 
-Quelqu’un, un jour, s’en est séparé.
+Cent deux ans plus tard, le prix qui porte son nom va à quatre machines de jeu où plus rien ne tombe.
 
-C’est la première chose à laquelle on pense devant l’œuvre qui a valu à David Brognon et Stéphanie Rollin le Prix Marcel Duchamp 2026. Pas aux machines, pas à la lumière, pas au titre interminable. À ce geste : se défaire de la preuve de neuf mois sans rechute.
+## Cinq mille ans au bord du plateau
 
-## Des pièces qui ne tombent pas
+David Brognon et Stéphanie Rollin travaillent ensemble depuis 2006. Pour l’exposition des nommés, accueillie au Musée d’Art Moderne pendant les travaux de Beaubourg, ils ont installé dans une salle quatre machines, des machines à sous et des pousse-pièces, ces vitrines de fête foraine où un plateau va et vient pour pousser des pièces vers un bord qu’elles franchissent rarement. Les machines sont éclairées de l’intérieur. Elles ne contiennent pas de pièces mais plusieurs centaines de jetons de sobriété, ces médailles que les groupes d’entraide remettent à leurs membres après un mois, neuf mois, huit ans d’abstinence. On lit dessus *9 Months*, *Celebration Recovery*, *AA 8 Years*. Les artistes les ont réunis pendant quatre ans sur des sites d’enchères, des forums et des plateformes de seconde main. Les plateaux se mettent en mouvement à des fréquences différentes, et les jetons restent au bord, en équilibre.[^2]
 
-L’œuvre s’appelle *5376 Years, 1892 Months, 1110 Days, 1201 Hours*.[^1] Quatre machines de salle de jeux, machines à sous et pousse-pièces, ces vitrines où des plateaux coulissants poussent des montagnes de pièces vers un bord qu’elles ne franchissent presque jamais. Les artistes les ont éclairées de l’intérieur et transformées en cabinets de curiosités. À la place des pièces, des centaines de jetons de sobriété, réunis sur des forums et des sites de revente. On y lit *Celebration Recovery*, *AA 8 Years*, des mois, des années, des heures.[^2]
+Le titre, *5376 Years, 1892 Months, 1110 Days, 1201 Hours*, fait la somme de toutes les durées gravées. C’est le geste le plus conceptuel de l’œuvre, et le moins juste. Les groupes répètent qu’on ne reste sobre qu’un jour à la fois, et chacun de ces jours a été tenu par quelqu’un, seul. Additionner ces jours revient à les traiter comme un stock. Le total est celui d’un caissier : il dit combien la salle contient, pas ce que chacun a dû tenir.
 
-Et les jetons ne tombent jamais. Ils restent au bord, en équilibre.
+## Ce que le vendeur a raconté
 
-Le titre est une addition. Il fait la somme de tous ces temps de sobriété, appartenant à des inconnus, en années, en mois, en jours, en heures. Il additionne des durées qui ne s’additionnent pas, puisque chacune a été gagnée seule, un jour après l’autre, selon la formule des groupes. Le résultat est vertigineux et parfaitement abstrait : plus de cinq mille ans d’abstinence, et personne pour les avoir vécus d’un seul tenant.
+Dans l’entretien publié par le Centre Pompidou, David Brognon explique qu’on se sépare en général de ces jetons après une rechute, ou quand on a besoin d’argent, et qu’il parle avec chaque vendeur pour connaître l’histoire de l’objet qu’il achète.[^2] Les artistes savent donc, pour chaque jeton, ce qui l’a mis en vente. Le visiteur n’en saura rien : la salle ne livre que les inscriptions.
 
-## La machine de la répétition
+Ce silence a une justification solide. L’anonymat est la règle des Alcooliques anonymes, que leur douzième tradition présente comme le fondement de toutes les autres.[^3] Raconter, même sans nom, la rechute de celui qui a vendu sa médaille des neuf mois, ce serait trahir le cadre d’où vient l’objet. Les artistes ont choisi de se taire, et ils ont eu raison.
 
-Il fallait choisir le pousse-pièces. On ne pouvait pas trouver d’objet plus juste.
+Reste ce que le silence ne règle pas. Un homme ou une femme a revendu, pour quelques dollars sans doute [À vérifier : prix d’achat moyen], la preuve qu’il avait tenu neuf mois. Ce jeton se trouve aujourd’hui sous un éclairage de vitrine, dans une œuvre qui vient de remporter 35 000 euros. Il ne s’agit pas d’accuser les artistes d’avoir mal agi : ils ont acheté au prix demandé, à des gens qui voulaient vendre. Mais l’œuvre ne montre jamais ce passage de main. Elle a occupé, sans le mettre en scène, la place que tient la maison dans un casino : celle qui ramasse ce que les joueurs ont perdu.
 
-En 1920, dans *Au-delà du principe de plaisir*, Freud décrit une force qui ne cherche pas le plaisir mais le retour : la compulsion de répétition, ce qui pousse un sujet à rejouer encore ce qui l’a fait souffrir.[^3] Le pousse-pièces en est l’allégorie mécanique. On y glisse une pièce pour en faire tomber d’autres, qui ne tombent pas, alors on en glisse une autre. Le plateau va et vient. La promesse est toujours au bord. Le joueur ne gagne presque rien, et il revient.
+> [!exergue] La vitrine garde tout ce que la rechute a fait perdre, et l’éclaire.
 
-Brognon Rollin ont arrêté la machine sans l’éteindre. Les plateaux sont là, la lumière aussi, la promesse demeure. Mais ce qui devrait tomber ne tombe plus. C’est exactement l’état que décrivent ceux qui ont cessé : l’envie est intacte, la machine tourne encore, et chaque jour on tient l’équilibre au bord. La sobriété n’est pas une guérison. C’est une chute indéfiniment remise au lendemain.
+## Le tas de bonbons
 
-> [!exergue] Le jeton vaut par ce qu’il atteste, jamais par ce qu’il permet d’acheter.
+L’entretien du Centre Pompidou rapproche lui-même l’installation de Félix González-Torres.[^2] La comparaison est utile, mais elle ne tourne pas à l’avantage de Brognon Rollin. En 1991, González-Torres déverse dans l’angle d’une galerie environ soixante-dix-neuf kilos de bonbons enveloppés de cellophane, le poids idéal de son compagnon Ross Laycock, mort du sida cette année-là. Chaque visiteur peut en prendre un. Le tas diminue, comme le corps de Ross a diminué, et le musée le remplit à nouveau.[^4]
 
-## Une monnaie qui n’achète rien
-
-Le jeton a l’air d’une pièce, et c’est tout son trouble. Une pièce circule, s’échange, se dépense ; le jeton de sobriété, lui, est fait pour ne pas servir. On le garde dans une poche, on le tourne entre ses doigts quand l’envie revient. Il vaut par ce qu’il atteste, pas par ce qu’il permet d’acheter.
-
-Winnicott a nommé objet transitionnel ce bout de couverture ou cette peluche que l’enfant garde contre lui pour supporter l’absence, et qui n’est ni tout à fait lui ni tout à fait le monde.[^4] Le jeton de sobriété est un objet de cette famille, un objet de seconde chance. Il tient lieu de ce qui manque, la substance, et il rappelle ce qui tient, le groupe.
-
-Alors le revendre, c’est quoi ? Une rechute peut-être, ou une mort. Peut-être seulement un déménagement, une boîte vidée par des héritiers qui ne savaient pas ce que c’était. L’œuvre ne le dit pas, et c’est sa délicatesse : elle expose des objets dont elle ignore l’histoire, et nous oblige à l’imaginer. Chaque jeton en vitrine est une petite énigme biographique. Ce qu’on lit dessus est un temps de victoire. Le fait qu’il soit là raconte peut-être une défaite.
+Toute l’œuvre tient dans ce geste : le visiteur emporte une part de la perte, et le portrait existe à condition de se défaire. Chez Brognon Rollin, rien ne sort de la vitrine. Les jetons, qui avaient circulé de main en main, de la réunion de groupe à la poche du manteau puis à l’enchère en ligne, s’arrêtent dans une machine qui ne rend plus rien. Le musée parle de « cabinet de curiosités ».[^2] Le mot est révélateur, car on collectionne des curiosités venues d’autres vies que la sienne. La vitrine éclairée garde les objets et les met en valeur, la perte reste de l’autre côté de la vitre.
 
 ## Kate
 
-Il y a, dans la salle, trois veilleuses. Leur intensité est réglée à distance, au moyen d’une application, par une femme qu’on appelle Kate, sobre depuis huit ans. Elle les ajuste selon les difficultés de sa journée.[^5]
+Il y a pourtant, dans la même salle, l’idée la plus forte du prix. Trois veilleuses y sont reliées à une application. Une femme, Kate, sobre depuis huit ans, en règle chaque jour l’intensité selon les difficultés qu’elle traverse.[^2]
 
-C’est le cœur de l’œuvre, et il faut le regarder à la bonne distance. Kate a choisi de prêter ses jours à une exposition, et l’on ne sait d’elle que ce qu’elle a accepté qu’on sache. La lumière ne dit rien de ce qu’elle traverse. Elle dit seulement qu’elle traverse quelque chose, aujourd’hui, à cette heure, ailleurs. Le visiteur qui passe ne remarque probablement pas que la lumière a changé.
+Ici, personne n’a rien vendu. Kate prête quelque chose de sa journée et peut cesser quand elle veut. On ne la voit pas, on ne sait rien de ce qui lui arrive, et la lumière ne le dit pas non plus : elle indique seulement qu’à cette heure, ailleurs, quelqu’un pèse sur un curseur. La plupart des visiteurs ne remarqueront pas la variation. C’est le dispositif le plus proche du portrait de Ross, où un corps existe par une quantité qui change, et c’est le seul de la salle qui échappe à la logique de la collection.
 
-Les artistes travaillent ainsi depuis vingt ans. Ils ont fait tenir par un *line stander*, ces gens qu’on paie pour attendre dans une file à la place d’un autre, l’attente d’une personne qui avait demandé à mourir et attendait chez elle l’euthanasie ; la performance a duré vingt-six jours et douze heures. Ils ont fabriqué une horloge qui s’arrête quand on s’en approche, pour dire l’ennui d’une cellule.[^6] Fabrice Hergott, au nom du jury, a résumé ce travail d’une formule exacte : rendre visible le temps de l’attente, de l’addiction et de la résistance intime.[^7] Il faut ajouter : sans jamais prétendre l’avoir compris de l’intérieur. C’est rare.
+Le meilleur de Brognon Rollin a toujours reposé sur ce genre de délégation. Dans *Until Then*, présentée pour la première fois en 2018, un *line stander*, de ceux qu’on paie pour faire la queue à la place d’un autre, attendait dans l’exposition aussi longtemps qu’une personne anonyme attendait chez elle son euthanasie : vingt-six jours et douze heures. *8 m² Loneliness (B135)* est une horloge qui s’arrête quand on s’en approche et repart quand on s’éloigne, pour évoquer l’ennui d’une cellule.[^5] Dans ces pièces, l’œuvre emprunte un temps qui reste à quelqu’un. Avec les jetons, elle le possède.
 
-## La scène française, de passage
+Le jury, par la voix de Fabrice Hergott, a salué un travail qui donne forme à l’expérience de l’addiction et à la résistance intime qu’on lui oppose.[^6] Ce jugement vaut pour les veilleuses de Kate. Il vaut moins pour les quatre machines, qui occupent l’essentiel de la salle et de l’attention.
 
-Reste le titre de cet article, qui n’était pas une coquetterie.
+## Par tirages artificiels
 
-Le Prix Marcel Duchamp est porté par une association qui se consacre à la diffusion internationale de l’art français. Ses lauréats de cette année sont nés à Messancy, en Belgique, et à Luxembourg ; ils vivent entre Paris, Luxembourg et Sienne.[^8] Le prix lui-même est en exil : chassé de Beaubourg par les travaux, il est hébergé au Musée d’Art Moderne jusqu’en 2029.[^9] Et l’œuvre primée rassemble des objets arrachés à leurs propriétaires, revendus loin de ceux qui les avaient mérités.
+Les obligations de Duchamp étaient « remboursables au pair en trois ans par tirages artificiels ». La formule figure sur le titre, en petits caractères, sous le montant de l’emprunt. Duchamp savait que le jeu enrichit la maison et pas le joueur, et il s’était fait, le temps d’un hiver, banquier de sa propre martingale, avec un pseudonyme féminin à la présidence du conseil.
 
-On parle de « scène française » comme d’une nationalité. Brognon Rollin rappellent qu’une scène est d’abord un endroit où l’on passe, où l’on se tient un moment sous la lumière avant de repartir. Leurs jetons y sont arrivés par des chemins que personne ne connaît. Eux y sont arrivés de Luxembourg, il y a vingt ans, après s’être rencontrés dans un musée où il travaillait à la régie et elle comme assistante de la direction.[^10]
+Les jetons de Brognon Rollin ont connu, eux aussi, un tirage artificiel : une annonce en ligne, une conversation avec un acheteur, une vitrine, puis un jury. Au Musée d’Art Moderne, la médaille des neuf mois attend au bord du plateau. Ce soir, Kate aura peut-être baissé la lumière.
 
-Ce soir, au Musée d’Art Moderne, trois lampes auront changé d’intensité. Quelque part, Kate aura eu une journée. Le gardien de salle n’aura rien vu. C’est précisément ce que l’œuvre voulait montrer.
-
-[^1]: Brognon Rollin, *5376 Years, 1892 Months, 1110 Days, 1201 Hours*, 2026, Musée d’Art Moderne de Paris, exposition du Prix Marcel Duchamp 2026 (*Ocula*, octobre 2026).
+[^1]: Marcel Duchamp, *Obligation pour la roulette de Monte-Carlo*, 1924, photocollage de Man Ray sur lithographie ; Nouveau Musée National de Monaco, présentation du centenaire de l’œuvre, Atrium du Casino de Monte-Carlo, mai 2025. Voir aussi Centre Pompidou, Man Ray, *Marcel Duchamp, Obligation pour la Roulette de Monte-Carlo*, 1924, AM 1994-394 (2319). [À vérifier : issue du séjour de Duchamp à Monte-Carlo au début de 1925, dans la correspondance avec Jacques Doucet et Francis Picabia.]
 [^2]: Centre Pompidou, « Brognon Rollin, le temps à l’épreuve », entretien avec les artistes, *Pompidou+*, 2026.
-[^3]: Sigmund Freud, « Au-delà du principe de plaisir » (1920), repris dans *Essais de psychanalyse*, Paris, Payot, coll. « Petite Bibliothèque Payot ».
-[^4]: Donald W. Winnicott, « Objets transitionnels et phénomènes transitionnels » (1951), repris dans *Jeu et réalité. L’espace potentiel*, Paris, Gallimard, 1975.
+[^3]: Alcooliques anonymes, « Les Douze Traditions », douzième tradition.
+[^4]: Félix González-Torres, *« Untitled » (Portrait of Ross in L.A.)*, 1991, bonbons sous emballages de couleurs, quantité inépuisable, poids idéal 175 livres. Art Institute of Chicago ; Felix Gonzalez-Torres Foundation, catalogue raisonné, CR 168.
 [^5]: Centre Pompidou, entretien cité.
-[^6]: *Until Then*, performance, première présentation en 2018 ; *8 m² Loneliness (B135)*. Centre Pompidou, entretien cité.
-[^7]: Centre Pompidou, communiqué d’annonce du lauréat, 22 octobre 2026. Le prix est doté de 90 000 euros, dont 35 000 pour le lauréat (*The Art Newspaper*, 23 octobre 2026).
-[^8]: Prix Marcel Duchamp 2026, dossier des artistes nommés ; MFC Michèle Didier, dossier de presse 2026. L’ADIAF est l’Association pour la diffusion internationale de l’art français.
-[^9]: Centre Pompidou, communiqué « Prix Marcel Duchamp 2026 ». [À vérifier : date de clôture, donnée au 7 février 2027 par le Centre Pompidou et au 14 février 2027 par un communiqué du MAM.]
-[^10]: BPS22, dossier pédagogique de l’exposition Brognon Rollin, Charleroi, 2021.
+[^6]: Centre Pompidou, communiqué d’annonce du lauréat, 22 octobre 2026 ; *The Art Newspaper*, 23 octobre 2026. Le prix est doté de 90 000 euros au total, dont 35 000 pour le lauréat.
