@@ -4,7 +4,7 @@ chapo: "La « raffinerie » de 1977 était pensée contre l’idée même de mon
 rubrique: essais
 sujet: Architecture
 date: 2026-11-15
-auteur: "[Signature]"
+auteur: "Ariane"
 image:
   alt: "Façade du Centre Pompidou sous échafaudages"
 

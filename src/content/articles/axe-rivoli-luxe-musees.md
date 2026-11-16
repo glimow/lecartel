@@ -4,7 +4,7 @@ chapo: "Samaritaine, Bourse de Commerce, Fondation Cartier : en un kilomètre, l
 rubrique: enquetes
 sujet: Institutions
 date: 2026-11-16
-auteur: "[Signature]"
+auteur: "Ariane"
 brouillon: false
 image:
   src: ./images/grands-magasins-louvre-1919.jpg

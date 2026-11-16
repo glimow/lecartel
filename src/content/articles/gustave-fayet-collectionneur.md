@@ -4,7 +4,7 @@ chapo: "La Fondation Louis Vuitton recompose la collection de Gustave Fayet sous
 rubrique: histoire
 sujet: Collection
 date: 2026-11-16
-auteur: "[Signature]"
+auteur: "Étienne"
 brouillon: false
 image:
   src: ./images/redon-la-nuit-fontfroide.jpg

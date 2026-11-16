@@ -4,7 +4,7 @@ chapo: "Première exposition française d’un peintre d’histoire qui a fait e
 rubrique: critiques
 sujet: Peinture
 date: 2026-11-11
-auteur: "[Signature]"
+auteur: "Étienne"
 image:
   alt: "Kerry James Marshall, vue d’exposition au Musée d’Art Moderne de Paris"
 

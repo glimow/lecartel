@@ -4,7 +4,7 @@ chapo: "Le duo lauréat travaille les temps suspendus ; le prix, lui, attend Bea
 rubrique: critiques
 sujet: Prix Marcel Duchamp
 date: 2026-11-09
-auteur: "[Signature]"
+auteur: "Irène"
 image:
   alt: "Brognon Rollin, œuvre présentée au Prix Marcel Duchamp 2026"
 

@@ -2,7 +2,7 @@
 titre: "Xavier Le Roy, ou le visiteur chorégraphié"
 chapo: "Cette semaine : la performance-exposition de Xavier Le Roy au Palais de Tokyo, présentée trois jours seulement. Faut-il regarder une chorégraphie comme on visite une salle ?"
 date: 2026-11-16
-auteur: "[Signature]"
+auteur: "Irène"
 artiste: Xavier Le Roy
 oeuvre: "Temporary Title, 2026"
 technique: "Performance, accès continu de 14 h à 20 h"

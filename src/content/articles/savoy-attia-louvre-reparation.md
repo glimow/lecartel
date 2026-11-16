@@ -4,7 +4,7 @@ chapo: "Après le casse de la galerie d’Apollon, le Louvre invite l’historie
 rubrique: essais
 sujet: Institutions
 date: 2026-11-15
-auteur: "[Signature]"
+auteur: "Étienne"
 dossier: faut-il-bruler-le-louvre
 brouillon: false
 image:

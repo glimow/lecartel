@@ -4,7 +4,7 @@ chapo: "Pour son bicentenaire, la photographie est célébrée partout à Paris 
 rubrique: essais
 sujet: Photographie
 date: 2026-11-16
-auteur: "[Signature]"
+auteur: "Irène"
 une: true
 brouillon: false
 image:

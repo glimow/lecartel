@@ -4,7 +4,7 @@ chapo: "Paris est redevenue une place commerciale. Reste à savoir si elle produ
 rubrique: enquetes
 sujet: Marché
 date: 2026-11-08
-auteur: "[Signature]"
+auteur: "Ariane"
 image:
   src: ./images/grand-palais-1900.jpg
   alt: "Le Grand Palais photographié par Eugène Trutat pendant l’Exposition universelle de 1900"
