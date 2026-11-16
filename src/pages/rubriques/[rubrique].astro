@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import CarteArticle from '../../components/CarteArticle.astro';
+import { RUBRIQUES } from '../../data/rubriques';
+import { articlesPublies } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const articles = await articlesPublies();
+  return RUBRIQUES.map((r) => ({
+    params: { rubrique: r.id },
+    props: { r, articles: articles.filter((a) => a.data.rubrique === r.id) },
+  }));
+}
+const { r, articles } = Astro.props;
+---
+<Base titre={r.label} description={r.description}>
+  <header class="entete-liste">
+    <h1>{r.label}</h1>
+    <p>{r.description}</p>
+  </header>
+  {articles.length > 0 ? (
+    <div class="grille">
+      {articles.map((a) => <CarteArticle article={a} />)}
+    </div>
+  ) : (
+    <p class="vide">Aucun article publié dans cette rubrique pour l’instant.</p>
+  )}
+</Base>
+
+<style>
+  .entete-liste { padding: 64px 0 40px; border-bottom: 1px solid var(--encre); margin-bottom: 48px; }
+  h1 { margin: 0 0 12px; font-size: clamp(48px, 7vw, 96px); font-weight: 400; font-style: italic; line-height: 1; }
+  .entete-liste p { margin: 0; font-size: 22px; color: var(--texte); max-width: 720px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 56px 40px; padding-bottom: 72px; }
+  .vide { font-size: 20px; color: var(--gris); padding-bottom: 72px; }
+</style>

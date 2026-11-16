@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  visuel?: { src?: ImageMetadata; alt: string; legende?: string; credit?: string };
+  hauteur: string;            // hauteur de l’emplacement vide (ex. "620px")
+  largeurs?: number[];
+  sizes?: string;
+  prioritaire?: boolean;
+  legende?: boolean;          // afficher légende + crédit sous l’image
+}
+const { visuel, hauteur, largeurs = [480, 800, 1200, 1600], sizes = '100vw', prioritaire = false, legende = false } = Astro.props;
+---
+<figure class="visuel">
+  {visuel?.src ? (
+    <Image
+      src={visuel.src}
+      alt={visuel.alt}
+      widths={largeurs}
+      sizes={sizes}
+      loading={prioritaire ? 'eager' : 'lazy'}
+      fetchpriority={prioritaire ? 'high' : undefined}
+      style={`height:${hauteur}`}
+      class="img"
+    />
+  ) : (
+    <div class="emplacement" style={`height:${hauteur}`} role="img" aria-label={visuel?.alt ?? 'Image à venir'}>
+      <span>[Image : {visuel?.alt ?? 'à venir'}]</span>
+    </div>
+  )}
+  {legende && (visuel?.legende || visuel?.credit) && (
+    <figcaption>
+      {visuel?.legende && <span set:html={visuel.legende} />}
+      {visuel?.credit && <span>{visuel.credit}</span>}
+    </figcaption>
+  )}
+</figure>
+
+<style>
+  .visuel { margin: 0; }
+  .img { width: 100%; object-fit: cover; }
+  .emplacement {
+    background: var(--emplacement); display: flex; align-items: flex-end; padding: 14px;
+    font-family: var(--mono); font-size: 11px; color: var(--gris); letter-spacing: 0.02em;
+  }
+  figcaption {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+    font-family: var(--mono); font-size: 11px; color: var(--gris);
+    padding: 12px 0; border-bottom: 1px solid var(--filet);
+  }
+  figcaption :global(i) { font-family: var(--serif); font-size: 13px; }
+  @media (max-width: 760px) {
+    .img, .emplacement { max-height: 60vw; }
+  }
+</style>

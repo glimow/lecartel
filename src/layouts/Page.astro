@@ -1,0 +1,16 @@
+---
+// Layout pour les pages simples écrites en Markdown dans src/pages (À propos, Mentions légales…)
+import Base from './Base.astro';
+const { frontmatter } = Astro.props;
+---
+<Base titre={frontmatter.titre} description={frontmatter.description}>
+  <header class="entete-liste"><h1>{frontmatter.titre}</h1></header>
+  <div class="colonnes simple"><slot /></div>
+</Base>
+
+<style>
+  .entete-liste { padding: 64px 0 40px; border-bottom: 1px solid var(--encre); margin-bottom: 48px; }
+  h1 { margin: 0; font-size: clamp(48px, 7vw, 96px); font-weight: 400; font-style: italic; line-height: 1; }
+  .colonnes { display: flex; flex-wrap: wrap; gap: 48px; padding-bottom: 72px; }
+  .simple :global(.texte > p:first-of-type::first-letter) { float: none; font-size: inherit; padding: 0; }
+</style>

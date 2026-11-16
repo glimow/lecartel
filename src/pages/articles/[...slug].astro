@@ -1,0 +1,147 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Visuel from '../../components/Visuel.astro';
+import CarteArticle from '../../components/CarteArticle.astro';
+import Lettre from '../../components/Lettre.astro';
+import { rubrique } from '../../data/rubriques';
+import { articlesPublies, dateLongue, tempsDeLecture } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const articles = await articlesPublies();
+  return articles.map((article) => ({ params: { slug: article.id }, props: { article, tous: articles } }));
+}
+
+const { article, tous } = Astro.props;
+const { data } = article;
+const { Content } = await render(article);
+const r = rubrique(data.rubrique);
+const dossier = data.dossier ? await getEntry(data.dossier) : undefined;
+
+// « Lire aussi » : même dossier, puis mêmes tags, puis même rubrique, puis les plus récents
+const autres = tous.filter((a) => a.id !== article.id);
+const score = (a: typeof article) =>
+  (dossier && a.data.dossier?.id === dossier.id ? 100 : 0) +
+  a.data.tags.filter((t) => data.tags.includes(t)).length * 10 +
+  (a.data.rubrique === data.rubrique ? 5 : 0);
+const lireAussi = [...autres].sort((a, b) => score(b) - score(a) || b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+const imageOg = data.image?.src?.src;
+---
+<Base titre={data.titre} description={data.chapo} image={imageOg} type="article">
+  <article class="article" data-pagefind-body>
+    <header class="tete">
+      <div class="surtitre tete-surtitre">
+        <a href={`/rubriques/${r.id}/`}>{r.singulier}</a> · {data.sujet}
+        {dossier && <> · <a href={`/dossiers/${dossier.id}/`}>Dossier « {dossier.data.titre} »</a></>}
+      </div>
+      <h1 data-pagefind-meta="title">{data.titre}</h1>
+      <p class="chapo">{data.chapo}</p>
+      <div class="meta signature">
+        <span>Par <span class="auteur">{data.auteur}</span></span>
+        <time datetime={data.date.toISOString()}>{dateLongue(data.date)}</time>
+        <span>{tempsDeLecture(article.body)} min de lecture</span>
+      </div>
+    </header>
+
+    <div class="image-principale">
+      <Visuel visuel={data.image} hauteur="clamp(280px, 50vw, 720px)" prioritaire legende />
+    </div>
+
+    <div class="colonnes">
+      <aside class="cartel" aria-label="Cartel de l’article" data-pagefind-ignore>
+        {data.cartel.length > 0 && (
+          <div class="bloc">
+            <div class="bloc-titre mono">Cartel</div>
+            <div class="cartel-items">
+              {data.cartel.map((c) => (
+                <div>
+                  <div class="c-titre">{c.titre}</div>
+                  <div class="mono c-meta">
+                    <div>{c.lieu}</div>
+                    <div>{c.dates}</div>
+                    {c.details && <div>{c.details}</div>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        <div class="bloc partage">
+          <div class="bloc-titre mono">Partager</div>
+          <div class="mono liens-partage">
+            <a href={`mailto:?subject=${encodeURIComponent(data.titre)}&body=${encodeURIComponent(Astro.url.href)}`}>E-mail</a>
+            <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`} rel="noopener" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="corps"><Content /></div>
+    </div>
+
+    <footer class="fin">
+      <div>
+        <div class="mono fin-label">Texte</div>
+        <div class="fin-auteur">{data.auteur}</div>
+      </div>
+      {data.tags.length > 0 && (
+        <ul class="mono tags" aria-label="Mots-clés">
+          {data.tags.map((t) => <li>{t}</li>)}
+        </ul>
+      )}
+    </footer>
+  </article>
+
+  {lireAussi.length > 0 && (
+    <section class="lire-aussi" aria-labelledby="lire-aussi-titre">
+      <h2 id="lire-aussi-titre" class="titre-section sans-filet">Lire aussi</h2>
+      <div class="grille">
+        {lireAussi.map((a) => <CarteArticle article={a} taille="petite" />)}
+      </div>
+    </section>
+  )}
+
+  <Lettre sombre />
+</Base>
+
+<style>
+  .tete { max-width: 1040px; margin: 0 auto; padding: 72px 0 48px; text-align: center; }
+  .tete-surtitre { font-size: 12px; margin-bottom: 28px; }
+  h1 { margin: 0 0 28px; font-size: clamp(42px, 5.4vw, 76px); line-height: 1; font-weight: 400; letter-spacing: -0.025em; }
+  .chapo { margin: 0 auto; max-width: 760px; font-size: 24px; line-height: 1.45; color: var(--texte); }
+  .signature { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin-top: 32px; }
+  .auteur { color: var(--encre); border-bottom: 1px solid var(--encre); }
+  .image-principale { margin-bottom: 64px; }
+
+  .colonnes { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; padding-bottom: 72px; }
+  .cartel { flex: 1 1 240px; min-width: 0; max-width: 300px; }
+  .bloc { border-top: 2px solid var(--encre); padding-top: 14px; }
+  .partage { border-top-width: 1px; border-top-color: var(--filet); margin-top: 28px; }
+  .bloc-titre { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+  .cartel-items { display: flex; flex-direction: column; gap: 18px; }
+  .c-titre { font-size: 18px; font-style: italic; line-height: 1.25; }
+  .c-meta { font-size: 11px; line-height: 1.7; color: var(--gris); }
+  .liens-partage { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; }
+  .liens-partage a { padding: 10px 0; }
+
+  .fin {
+    max-width: 680px; margin: 0 auto 72px; border-top: 1px solid var(--encre); padding-top: 24px;
+    display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-start;
+  }
+  .fin-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris); margin-bottom: 6px; }
+  .fin-auteur { font-size: 20px; }
+  .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; font-size: 11px; }
+  .tags li { border: 1px solid var(--encre); padding: 8px 12px; }
+
+  .lire-aussi { border-top: 2px solid var(--encre); padding: 24px 0 64px; }
+  .sans-filet { border: 0; margin-bottom: 32px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+
+  @media (max-width: 760px) {
+    .tete { padding: 40px 0 32px; }
+    .chapo { font-size: 20px; }
+  }
+  @media (max-width: 1100px) {
+    .cartel { max-width: none; flex-basis: 100%; }
+    .cartel-items { flex-direction: row; flex-wrap: wrap; gap: 18px 40px; }
+  }
+</style>

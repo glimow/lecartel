@@ -1,0 +1,78 @@
+# Agenda du Cartel. Un événement disparaît automatiquement du site après sa date de fin
+# (au prochain build). Dates au format AAAA-MM-JJ.
+
+- id: xavier-le-roy
+  titre: "Temporary Title, 2026"
+  artiste: Xavier Le Roy
+  lieu: Palais de Tokyo
+  debut: 2026-11-20
+  fin: 2026-11-22
+
+- id: hotes-du-louvre-2026
+  titre: "Les Hôtes du Louvre"
+  artiste: Kader Attia et Elizabeth Peyton
+  lieu: Musée du Louvre
+  debut: 2026-09-24
+  fin: 2026-12-14
+
+- id: cezanne-et-nous
+  titre: "Cézanne et nous"
+  lieu: Grand Palais
+  debut: 2026-09-23
+  fin: 2027-01-17
+
+- id: remember-me
+  titre: "Remember Me"
+  lieu: Bourse de Commerce
+  debut: 2026-10-07
+  fin: 2027-01-18
+
+- id: kerry-james-marshall
+  titre: "The Histories"
+  artiste: Kerry James Marshall
+  lieu: Musée d’Art Moderne de Paris
+  debut: 2026-09-18
+  fin: 2027-01-24
+
+- id: simone-fattal
+  titre: "Des villes au fond d’un lac"
+  artiste: Simone Fattal
+  lieu: Musée d’Art Moderne de Paris
+  debut: 2026-09-18
+  fin: 2027-01-24
+
+- id: prix-duchamp-2026
+  titre: "Prix Marcel Duchamp 2026"
+  lieu: Musée d’Art Moderne de Paris
+  debut: 2026-10-02
+  fin: 2027-02-07
+
+- id: tous-les-feux-les-fleurs
+  titre: "Tous les feux, les fleurs"
+  lieu: Palais de Tokyo
+  debut: 2026-10-21
+  fin: 2027-02-14
+
+- id: ibrahim-mahama
+  titre: "Ibrahim Mahama"
+  lieu: Fondation Cartier
+  debut: 2026-10-22
+  fin: 2027-02-28
+
+- id: gustave-fayet
+  titre: "Gustave Fayet, collectionneur – créateur"
+  lieu: Fondation Louis Vuitton
+  debut: 2026-10-09
+  fin: 2027-03-08
+
+- id: look-40-ans
+  titre: "Look ! 40 ans de mode au musée"
+  lieu: Musée des Arts décoratifs
+  debut: 2026-09-30
+  fin: 2027-04-04
+
+- id: louvre-photo
+  titre: "Louvre Photo"
+  lieu: Musée du Louvre
+  debut: 2026-11-04
+  fin: 2027-05-03

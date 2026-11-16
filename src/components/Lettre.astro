@@ -1,0 +1,46 @@
+---
+import { SITE } from '../data/site';
+interface Props { sombre?: boolean }
+const { sombre = false } = Astro.props;
+const actif = Boolean(SITE.newsletterAction);
+---
+<section id="lettre" class:list={['lettre', { sombre }]} aria-labelledby="lettre-titre">
+  <div class="lettre-texte">
+    <h2 id="lettre-titre">La Lettre du <i>Cartel</i></h2>
+    <p>Chaque semaine, ce qu’il faut voir à Paris, et pourquoi, en moins de dix minutes de lecture.</p>
+  </div>
+  <form action={SITE.newsletterAction || undefined} method="post">
+    <div class="champ">
+      <label for={sombre ? 'email-s' : 'email'} class="mono">Adresse e-mail</label>
+      <input id={sombre ? 'email-s' : 'email'} name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required disabled={!actif} />
+    </div>
+    <button type="submit" class="bouton" disabled={!actif}>S’inscrire</button>
+    {!actif && <p class="meta inactif">Inscriptions bientôt ouvertes.</p>}
+  </form>
+</section>
+
+<style>
+  .lettre {
+    border-top: 2px solid var(--encre); border-bottom: 2px solid var(--encre);
+    padding: 48px 0; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between;
+  }
+  .sombre {
+    background: var(--encre); color: #fff; border: 0;
+    margin: 0 calc(-1 * var(--marge)); padding: 56px var(--marge);
+  }
+  .lettre-texte { flex: 1 1 420px; min-width: 0; }
+  h2 { margin: 0 0 10px; font-size: 40px; font-weight: 400; }
+  .lettre-texte p { margin: 0; font-size: 18px; line-height: 1.5; color: var(--texte); }
+  .sombre .lettre-texte p { color: #d6d6d2; }
+  form { flex: 1 1 420px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+  .champ { flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px; }
+  label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  input {
+    font-family: var(--serif); font-size: 18px; padding: 12px 0; border: 0;
+    border-bottom: 1px solid currentColor; background: transparent; color: inherit;
+  }
+  .sombre .bouton { background: #fff; color: var(--encre); }
+  .bouton[disabled] { opacity: 0.55; cursor: not-allowed; }
+  .inactif { flex-basis: 100%; margin: 0; }
+  .sombre .inactif { color: #d6d6d2; }
+</style>

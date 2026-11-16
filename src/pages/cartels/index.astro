@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { cartelsPublies, dateLongue } from '../../lib/format';
+const cartels = await cartelsPublies();
+---
+<Base titre="Les cartels" description="Une œuvre, une étiquette, cinq cents mots.">
+  <header class="entete-liste">
+    <h1>Les cartels</h1>
+    <p>Une œuvre, une étiquette, cinq cents mots.</p>
+  </header>
+  <ul class="liste">
+    {cartels.map((c) => (
+      <li>
+        <a href={`/cartels/${c.id}/`} class="etiquette">
+          <span class="et-artiste">{c.data.artiste}</span>
+          <span class="et-oeuvre">{c.data.oeuvre}</span>
+          <span class="mono et-details">{c.data.technique}</span>
+          <span class="mono et-date">{dateLongue(c.data.date)}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .entete-liste { padding: 64px 0 40px; border-bottom: 1px solid var(--encre); margin-bottom: 48px; }
+  h1 { margin: 0 0 12px; font-size: clamp(48px, 7vw, 96px); font-weight: 400; font-style: italic; line-height: 1; }
+  .entete-liste p { margin: 0; font-size: 22px; color: var(--texte); }
+  .liste { list-style: none; margin: 0; padding: 0 0 72px; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 32px; }
+  .etiquette { display: flex; flex-direction: column; border: 1px solid var(--encre); padding: 28px 32px; height: 100%; }
+  .etiquette:hover { border-color: var(--accent); }
+  .et-artiste { font-size: 22px; font-weight: 500; }
+  .et-oeuvre { font-size: 22px; font-style: italic; margin-bottom: 12px; }
+  .et-details { font-size: 12px; color: var(--texte); }
+  .et-date { font-size: 11px; color: var(--gris); margin-top: 16px; }
+</style>

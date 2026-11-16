@@ -1,0 +1,49 @@
+---
+import { RUBRIQUES } from '../data/rubriques';
+import { SITE } from '../data/site';
+---
+<footer class="pied">
+  <div class="pied-marque">
+    <a href="/" class="pied-logo">Le Cartel<span class="point">.</span></a>
+    <p>{SITE.description}</p>
+  </div>
+  <nav aria-label="Pied de page" class="pied-nav mono">
+    <div>
+      <span>Rubriques</span>
+      {RUBRIQUES.slice(0, 4).map((r) => <a href={`/rubriques/${r.id}/`}>{r.label}</a>)}
+    </div>
+    <div>
+      <span>La revue</span>
+      <a href="/a-propos/">À propos</a>
+      <a href="/cartels/">Les cartels</a>
+      <a href="/agenda/">Agenda</a>
+      <a href="/#lettre">La lettre</a>
+    </div>
+    <div>
+      <span>Suivre</span>
+      {SITE.reseaux.map((r) => <a href={r.href}>{r.label}</a>)}
+      <a href="/rss.xml">Flux RSS</a>
+    </div>
+  </nav>
+  <div class="pied-bas mono">
+    <span>© {new Date().getFullYear()} {SITE.nom} — {SITE.domaine}</span>
+    <a href="/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+<style>
+  .pied { display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between; padding: 56px 0 56px; }
+  .pied-marque { flex: 2 1 320px; }
+  .pied-logo { font-size: 56px; line-height: 1; letter-spacing: -0.03em; }
+  .pied-logo:hover { color: var(--encre); }
+  .point { color: var(--accent); }
+  .pied-marque p { margin: 14px 0 0; font-size: 16px; color: var(--gris); max-width: 360px; }
+  .pied-nav { flex: 3 1 480px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; font-size: 12px; line-height: 2.2; }
+  .pied-nav div { display: flex; flex-direction: column; }
+  .pied-nav span { color: var(--gris); }
+  .pied-bas {
+    flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px;
+    font-size: 11px; color: var(--gris); border-top: 1px solid var(--filet); padding-top: 16px;
+  }
+  @media (max-width: 560px) { .pied-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

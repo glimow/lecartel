@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import { SITE } from '../data/site';
+import EnTete from '../components/EnTete.astro';
+import PiedDePage from '../components/PiedDePage.astro';
+
+interface Props {
+  titre?: string;
+  description?: string;
+  image?: string;
+  /** Grand titre de la revue (accueil) ou en-tête compact (autres pages) */
+  grandTitre?: boolean;
+  type?: 'website' | 'article';
+}
+const { titre, description = SITE.description, image, grandTitre = false, type = 'website' } = Astro.props;
+const titreComplet = titre ? `${titre} — ${SITE.nom}` : `${SITE.nom} — ${SITE.description}`;
+const canonique = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titreComplet}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonique} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.nom} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:site_name" content={SITE.nom} />
+    <meta property="og:title" content={titre ?? SITE.nom} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonique} />
+    <meta property="og:locale" content="fr_FR" />
+    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+  </head>
+  <body>
+    <a class="visually-hidden" href="#contenu">Aller au contenu</a>
+    <div class="page">
+      <EnTete grandTitre={grandTitre} />
+      <main id="contenu">
+        <slot />
+      </main>
+      <PiedDePage />
+    </div>
+  </body>
+</html>

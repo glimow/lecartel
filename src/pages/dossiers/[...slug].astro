@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import CarteArticle from '../../components/CarteArticle.astro';
+import { articlesPublies } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const dossiers = await getCollection('dossiers');
+  const articles = await articlesPublies();
+  return dossiers.map((d) => ({
+    params: { slug: d.id },
+    props: { dossier: d, articles: articles.filter((a) => a.data.dossier?.id === d.id) },
+  }));
+}
+const { dossier, articles } = Astro.props;
+const { Content } = await render(dossier);
+---
+<Base titre={`Dossier — ${dossier.data.titre}`} description={dossier.data.intro}>
+  <header class="entete-liste">
+    <div class="surtitre">Dossier</div>
+    <h1>{dossier.data.titre}</h1>
+    <p>{dossier.data.intro}</p>
+  </header>
+  <div class="dossier-texte"><Content /></div>
+  {dossier.data.encadre && (
+    <aside class="encadre">
+      <h2 class="titre-section">{dossier.data.encadre.titre}</h2>
+      <ul>
+        {dossier.data.encadre.items.map((i) => <li><span class="mono">{i.date}</span><span>{i.texte}</span></li>)}
+      </ul>
+    </aside>
+  )}
+  <div class="grille">
+    {articles.map((a) => <CarteArticle article={a} />)}
+  </div>
+</Base>
+
+<style>
+  .entete-liste { padding: 64px 0 40px; border-bottom: 1px solid var(--encre); margin-bottom: 48px; }
+  .surtitre { font-size: 12px; margin-bottom: 16px; }
+  h1 { margin: 0 0 16px; font-size: clamp(44px, 6vw, 84px); font-weight: 400; font-style: italic; line-height: 1; }
+  .entete-liste p { margin: 0; font-size: 22px; color: var(--texte); max-width: 760px; }
+  .dossier-texte { display: flex; flex-wrap: wrap; gap: 48px; margin-bottom: 48px; }
+  .encadre { max-width: 680px; margin-bottom: 56px; }
+  .encadre ul { list-style: none; margin: 0; padding: 0; }
+  .encadre li { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--filet); font-size: 18px; }
+  .encadre .mono { font-size: 12px; color: var(--accent); min-width: 52px; padding-top: 4px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 56px 40px; padding-bottom: 72px; }
+</style>

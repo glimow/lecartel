@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Visuel from './Visuel.astro';
+import { rubrique } from '../data/rubriques';
+import { dateCourte } from '../lib/format';
+
+interface Props { article: CollectionEntry<'articles'>; taille?: 'normale' | 'petite' }
+const { article, taille = 'normale' } = Astro.props;
+const { data } = article;
+const r = rubrique(data.rubrique);
+const premierCartel = data.cartel[0];
+---
+<article class:list={['carte', taille]}>
+  <a href={`/articles/${article.id}/`} tabindex="-1" aria-hidden="true">
+    <Visuel visuel={data.image} hauteur={taille === 'petite' ? '220px' : '260px'} largeurs={[400, 700]} sizes="(max-width: 760px) 100vw, 33vw" />
+  </a>
+  <div class="surtitre">{r.singulier} · {data.sujet}</div>
+  <h3><a href={`/articles/${article.id}/`}>{data.titre}</a></h3>
+  {taille === 'normale' && <p>{data.chapo}</p>}
+  {taille === 'normale' && premierCartel && (
+    <div class="meta pied-carte">{premierCartel.titre} — {premierCartel.lieu} · {premierCartel.dates}</div>
+  )}
+</article>
+
+<style>
+  .carte { display: flex; flex-direction: column; gap: 14px; }
+  h3 { margin: 0; font-size: 30px; line-height: 1.1; font-weight: 400; }
+  .petite h3 { font-size: 26px; line-height: 1.12; }
+  p { margin: 0; font-size: 17px; line-height: 1.5; color: var(--texte); }
+  .pied-carte { font-size: 11px; border-top: 1px solid var(--filet); padding-top: 10px; }
+</style>

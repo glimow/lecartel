@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base titre="Œuvre introuvable">
+  <section class="introuvable">
+    <div class="etiquette">
+      <div class="et-artiste">Anonyme</div>
+      <div class="et-oeuvre">Page introuvable, s. d.</div>
+      <div class="mono et-details">
+        <div>Erreur 404, technique inconnue</div>
+        <div>Localisation actuelle inconnue</div>
+        <div class="gris">Œuvre perdue ou jamais réalisée</div>
+      </div>
+    </div>
+    <a href="/" class="bouton">Retour à l’accueil</a>
+  </section>
+</Base>
+
+<style>
+  .introuvable { padding: 120px 0; display: flex; flex-direction: column; align-items: center; gap: 40px; }
+  .etiquette { border: 1px solid var(--encre); padding: 32px 36px; max-width: 420px; width: 100%; }
+  .et-artiste { font-size: 26px; font-weight: 500; }
+  .et-oeuvre { font-size: 26px; font-style: italic; margin-bottom: 16px; }
+  .et-details { font-size: 12px; line-height: 1.75; }
+  .gris { color: var(--gris); margin-top: 10px; }
+</style>

@@ -1,0 +1,118 @@
+---
+import { RUBRIQUES } from '../data/rubriques';
+import { dateDuJour } from '../lib/format';
+
+interface Props { grandTitre?: boolean }
+const { grandTitre = false } = Astro.props;
+const chemin = Astro.url.pathname;
+const actif = (href: string) => chemin.startsWith(href);
+const liens = [
+  ...RUBRIQUES.map((r) => ({ href: `/rubriques/${r.id}/`, label: r.label })),
+  { href: '/agenda/', label: 'Agenda' },
+];
+---
+{grandTitre ? (
+  <>
+    <div class="bandeau mono">
+      <span>{dateDuJour(new Date())} — Paris</span>
+      <div class="bandeau-actions">
+        <a href="/recherche/">Rechercher</a>
+        <a class="bouton" href="/#lettre">S’abonner à la lettre</a>
+      </div>
+    </div>
+    <header class="masthead">
+      <a href="/" class="logo-grand" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
+      <div class="cartel-revue mono" aria-hidden="true">
+        <div class="cr-nom">LE CARTEL</div>
+        <div><i>Revue critique</i>, Paris, 2026</div>
+        <div>Technique mixte : art contemporain, design, lettres, histoire, psychanalyse</div>
+        <div class="cr-gris">Don des auteurs</div>
+      </div>
+    </header>
+    <nav class="nav nav-grande" aria-label="Rubriques">
+      <ul>
+        {liens.map((l) => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+      </ul>
+      <a class="loupe" href="/recherche/" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+      </a>
+    </nav>
+  </>
+) : (
+  <header class="compact">
+    <a href="/" class="logo-petit" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
+    <nav class="nav" aria-label="Rubriques">
+      <ul>
+        {liens.map((l) => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+    <div class="compact-actions">
+      <a class="loupe" href="/recherche/" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+      </a>
+      <a class="bouton" href="/#lettre">S’abonner</a>
+    </div>
+  </header>
+)}
+
+<style>
+  .bandeau {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
+    padding: 12px 0; font-size: 12px; color: var(--gris); border-bottom: 1px solid var(--filet);
+  }
+  .bandeau-actions { display: flex; gap: 20px; align-items: center; }
+  .bandeau-actions .bouton { padding: 10px 16px; min-height: 0; }
+  .masthead {
+    display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px;
+    padding: 40px 0 28px;
+  }
+  .logo-grand {
+    font-size: clamp(76px, 12vw, 168px); line-height: 0.86; font-weight: 400; letter-spacing: -0.035em;
+  }
+  .logo-grand:hover, .logo-petit:hover { color: var(--encre); }
+  .point { color: var(--accent); }
+  .cartel-revue {
+    font-size: 12px; line-height: 1.6; border-left: 1px solid var(--encre); padding-left: 16px; max-width: 300px;
+  }
+  .cartel-revue i { font-family: var(--serif); font-size: 14px; }
+  .cr-nom { font-weight: 500; }
+  .cr-gris { color: var(--gris); }
+
+  .nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 26px; }
+  .nav a {
+    display: inline-block; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 14px 0;
+  }
+  .nav a[aria-current='page'] { color: var(--accent); }
+  .nav-grande {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 28px;
+    border-top: 2px solid var(--encre); border-bottom: 1px solid var(--encre);
+  }
+  .nav-grande a { font-size: 13px; }
+  .loupe { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+
+  .compact {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 32px;
+    border-bottom: 2px solid var(--encre); padding: 12px 0;
+  }
+  .logo-petit { font-size: 40px; line-height: 1; letter-spacing: -0.03em; }
+  .compact-actions { display: flex; align-items: center; gap: 8px; }
+  .compact-actions .bouton { padding: 12px 16px; }
+
+  @media (max-width: 760px) {
+    /* Menu sur une seule ligne, défilant horizontalement */
+    .nav { order: 3; flex-basis: 100%; min-width: 0; }
+    .nav-grande { flex-wrap: nowrap; }
+    .nav ul {
+      flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 0 22px;
+      mask-image: linear-gradient(to right, #000 85%, transparent);
+    }
+    .nav ul::-webkit-scrollbar { display: none; }
+    .nav li { flex: 0 0 auto; }
+    .compact { padding-bottom: 0; }
+    .compact .nav { border-top: 1px solid var(--filet); }
+    .logo-petit { font-size: 32px; }
+    .bandeau-actions > a:first-child { display: none; }
+    .masthead { padding: 28px 0 20px; gap: 20px; }
+  }
+</style>
