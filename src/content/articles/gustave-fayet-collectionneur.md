@@ -1,19 +1,86 @@
 ---
-titre: "Gustave Fayet, ou la psychologie du collectionneur"
-chapo: "Il vendit deux Gauguin en un après-midi pour s’offrir une abbaye. Lire Fayet avec Benjamin et Baudrillard, et sa fondation hôte comme un miroir."
+titre: "Gustave Fayet, l’homme qui dépensait ses Gauguin"
+chapo: "La Fondation Louis Vuitton recompose la collection de Gustave Fayet sous l’enseigne des « Icônes de l’art moderne ». Mais Fayet ne thésaurisait pas : il achetait, revendait, changeait ses tableaux en abbaye, en vitraux, en tapis. Son œuvre, c’est ce qu’il a défait."
 rubrique: histoire
 sujet: Collection
-date: 2026-11-13
+date: 2026-11-16
 auteur: "[Signature]"
+brouillon: false
 image:
-  alt: "Abbaye de Fontfroide, collection Gustave Fayet"
-
+  src: ./images/redon-la-nuit-fontfroide.jpg
+  alt: "Odilon Redon, La Nuit, panneau de la bibliothèque de l’abbaye de Fontfroide : têtes en grisaille sur un fond de feuillages"
+  legende: "Odilon Redon, <i>La Nuit</i>, 1910-1911. Détrempe sur toile. Abbaye de Fontfroide, Narbonne."
+  credit: "Domaine public, via Wikimedia Commons"
 cartel:
-  - titre: Gustave Fayet, collectionneur – créateur
+  - titre: "Gustave Fayet. Collectionneur – Créateur. Icônes de l’art moderne"
     lieu: Fondation Louis Vuitton
     dates: "9.10.26 → 8.03.27"
-    details: 767 œuvres
-tags: [Collection, Fondation Louis Vuitton, Psychanalyse]
+    details: "Comm. gén. Sylvie Patry ; volet « créateur » Angeline Scherf. Scénographie Robert Carsen. 728 œuvres et documents"
+tags: [Collection, Fondation Louis Vuitton, Gauguin, Redon, Arts décoratifs]
 ---
 
-> **Note d'intention — article à rédiger.** Benjamin (« Je déballe ma bibliothèque »), Baudrillard (Le Système des objets). La mise en abyme : une fondation de grand collectionneur célèbre un collectionneur.
+Le 9 janvier 1909, Gustave Fayet inscrit dans son livre de comptes l’achat d’un paysage de Van Gogh chez le marchand Eugène Druet : des marronniers en fleurs, une maison au bord d’une route, des passants. Prix : 3 800 francs. En novembre de la même année, la toile est déjà repartie, cédée à la galerie Bernheim-Jeune.[^1] Mercredi 18 novembre, chez Sotheby’s à New York, ces mêmes *Châtaigniers en fleurs* seront mis en vente sur une estimation d’environ 180 millions de dollars, quand le record de l’artiste aux enchères s’établit à 117,2 millions.[^2] Le tableau devait être accroché à la Fondation Louis Vuitton, qui consacre depuis le 9 octobre une exposition à Fayet ; il est reproduit au catalogue. Le prêt a été retiré. Le marché est passé avant le musée.
+
+L’épisode a l’air d’un contretemps. C’est le meilleur portrait possible de l’homme. La Fondation déploie dans tous ses espaces 728 œuvres et documents, en deux volets, le collectionneur puis le créateur, sous le titre générique d’une série inaugurée avec Chtchoukine : « Icônes de l’art moderne ».[^3] Le récit est celui d’un œil prophétique, oublié par l’histoire, enfin rendu à sa place parmi les grands collectionneurs de la modernité. Les archives racontent autre chose. Fayet ne gardait pas : il faisait circuler. Sa collection n’était pas un trésor mais une monnaie, et ce qu’il a acheté avec elle vaut mieux qu’un rang parmi les icônes.
+
+## Le livre de comptes
+
+Fayet naît à Béziers en 1865 dans une lignée de négociants languedociens, enrichie par le canal du Midi et la vigne. Il dirige des domaines et une distillerie, place des fonds dans les chemins de fer, les mines, la banque ; en 1905, installé rue de Bellechasse, il siège au conseil d’une banque d’affaires.[^4] Il est aussi fils de peintre, formé dans l’atelier paternel, et conservateur des musées de Béziers de 1900 à 1904, où il monte des expositions d’art moderne que Paris n’aurait pas reniées. Par Georges-Daniel de Monfreid, l’ami fidèle de Gauguin, il découvre en 1897 le peintre alors à Tahiti ; il achète ses premières toiles en 1900, et devient de son vivant le plus important collectionneur de l’artiste.[^8] En 1906, il prête ses Gauguin à la rétrospective posthume du Salon d’automne.
+
+Rien de cela n’est faux. Mais le registre des achats de Van Gogh dessine une figure moins hiératique. Entre 1901 et 1909, Fayet acquiert seize toiles du peintre.[^5] Il garde jusqu’à sa mort le *Jardin public à Arles*, payé 2 000 francs en 1901. Il rend au marchand, au bout d’un an, la *Moisson en Provence* achetée en 1903. En janvier 1907, à Amsterdam, il rencontre Johanna van Gogh-Bonger, la belle-sœur du peintre, lui achète un jardin de l’asile de Saint-Rémy et le revend aux enchères quatre mois plus tard. Les *Châtaigniers en fleurs* restent dix mois. Même rythme chez Gauguin : un *Adam et Ève* de 1902, sans doute acquis en 1903, repart par échange avant la fin de l’année, comme le rappelle le cartel de l’exposition.[^14] Fayet achète, compare, rend, échange. Il traite les tableaux comme un banquier traite des positions. Sylvie Patry refuse d’y voir de la spéculation, et elle a raison : un homme de cette fortune n’avait pas besoin de plus-values.[^15] Mais circuler n’est pas spéculer. Fayet ne revendait pas pour s’enrichir ; il revendait pour voir autre chose, et pour payer ce qu’il voulait faire.
+
+Walter Benjamin, déballant ses caisses de livres en 1931, définissait le collectionneur par un lien presque amoureux à la chose possédée : pour lui, l’acquisition ne relève pas de l’usage ni du profit, mais d’une manière de renouveler le monde ancien en l’arrachant à la circulation.[^6] C’est exactement ce que Fayet ne fait pas. Ses tableaux ne sortent pas du marché ; ils y retournent. Son goût n’en est pas diminué. Il en est aiguisé : on ne revend vite que ce qu’on a jugé vite, et Fayet jugeait mieux que les musées. En avril 1909, il écrit au marchand Paul Rosenberg qu’il faudrait une révolution dans les musées français pour que le Louvre accepte un Van Gogh.[^1] Le Louvre en acceptera un deux ans plus tard.
+
+## Une abbaye contre des Gauguin
+
+En janvier 1908, l’abbaye cistercienne de Fontfroide, à quinze kilomètres de Narbonne, passe en vente publique. Gustave Fayet et sa femme, Madeleine d’Andoque, l’emportent.[^4] L’historiographie de Gauguin le sait depuis longtemps : cette année-là, Fayet vend une partie de sa collection.[^7] La communication de l’exposition en a fait une légende, deux Gauguin cédés en un après-midi pour payer les vieilles pierres, sans que les titres soient jamais donnés ; les comptes rendus de visite parlent plutôt de Cézanne et de Gauguin.[^16] La Fondation raconte que tout le projet est né en 2016, dans sa propre exposition Chtchoukine, devant un cartel qui précisait qu’une toile avait été vendue par Fayet pour restaurer Fontfroide.[^8] Le catalogue raisonné de Gauguin donne au moins un nom : *Te Arii Vahine*, la grande femme nue aux mangues de 1896, achetée par Fayet en août 1903 par l’entremise de Monfreid, passe à Chtchoukine en mai 1908, quatre mois après l’achat de l’abbaye. Elle est aujourd’hui au musée Pouchkine.[^17]
+
+Que fait un collectionneur qui vend ses Gauguin pour acheter une ruine ? Georges Bataille a donné en 1933 le mot qui convient : il dépense. Dans « La notion de dépense », il oppose à l’économie de l’utile, qui accumule et conserve, les pertes sans contrepartie que les sociétés s’offrent pour exister, fêtes, sacrifices, monuments.[^9] La collection, chez Fayet, est un capital ; Fontfroide est sa consumation. Pendant quinze ans, il y engloutit les tableaux vendus et les revenus de la vigne : restauration des bâtiments, jardins en terrasses, vitraux commandés à Richard Burgsthal, pour lesquels on finit par créer un atelier, la verrerie des Sablons ; concerts d’été où viennent le pianiste Ricardo Viñes et le compositeur Déodat de Séverac.[^10] Rien de cela ne rapporte. Tout cela est l’œuvre.
+
+On objectera que la dépense d’un héritier n’a rien d’héroïque. Bataille lui-même savait que la perte ostentatoire est aussi une manière, pour les riches, de signifier leur rang, et Fontfroide fut une demeure de grand bourgeois avant d’être un laboratoire. L’objection porte, mais elle ne change pas le sens du geste. Le collectionneur qui thésaurise espère que ses tableaux lui survivront et porteront son nom ; Fayet a préféré que son argent devienne un lieu, des verres colorés, des soirées de musique, c’est-à-dire des choses qui s’usent, qui se vivent et que nul ne revend.
+
+> [!exergue] Fayet n’a pas collectionné la modernité : il l’a dépensée.
+
+## La bibliothèque de Redon
+
+Le cœur de cette dépense est une pièce. Au-dessus d’une galerie du cloître, Fayet installe la bibliothèque et en confie le décor à Odilon Redon, qu’il connaît depuis 1899 et dont il possède des dizaines d’œuvres. Redon peint les toiles en 1910 dans son atelier parisien, vient en surveiller la pose ; l’ensemble est achevé en 1911.[^11] Deux grands panneaux se font face entre les rayonnages. *Le Jour*, long de six mètres et demi, montre le char d’Apollon d’après le groupe sculpté de Vaux-le-Vicomte que Fayet avait racheté pour son jardin : la peinture regarde le domaine qui l’abrite. *La Nuit* fait surgir d’une végétation de rêve une trentaine de visages, ceux de la famille et des amis qui peuplent Fontfroide l’été. Un troisième panneau, plus petit, *Le Silence*, complète la pièce.
+
+Le désir que Benjamin prêtait au collectionneur, renouveler le monde ancien, trouve ici sa forme littérale : une abbaye médiévale rendue habitable par la peinture la plus singulière de son temps. Mais ce n’est plus une collection. C’est une commande, liée à un lieu, impossible à revendre et à décrocher. Fayet passe du statut d’acheteur à celui de commanditaire, et de commanditaire à celui d’auteur d’un ensemble.
+
+Pour l’exposition, il a fallu décrocher la bibliothèque. Les restaurateurs ont déposé les trois toiles, et ont trouvé dessous, peintes à même la pierre, des esquisses en couleur que personne n’avait vues depuis plus d’un siècle : une femme tenant un fruit, trois figures dans les fleurs, l’une auréolée.[^12] C’est la décision la plus discutable des commissaires et la plus utile. Discutable, parce qu’elle transforme en prêt la seule œuvre que Fayet avait voulue immobile, et qu’elle montre à Paris, sous la lumière d’un musée, un décor pensé pour les livres, le bois et le jour méditerranéen. Utile, parce que la dépose a fait apparaître ce que Redon avait couvert.
+
+## Le dernier étage
+
+Reste le Fayet que l’exposition annonce comme sa révélation : le créateur. L’exposition lui donne le nombre : plus de trois cent vingt-cinq créations, contre quelque deux cent cinquante œuvres de la collection.[^13] Elle ne lui donne pas la place. La collection occupe trois niveaux du bâtiment ; l’œuvre de Fayet est montée au dernier, dans les galeries 9, 10 et 11.[^13] Sylvie Patry, commissaire générale, dirige le catalogue de la collection ; Angeline Scherf, conservatrice à la Fondation, celui du créateur. L’ordre de visite est celui du titre : collectionneur d’abord, créateur ensuite.
+
+La trajectoire de Fayet va dans l’autre sens. Dès 1896, il dessine avec le céramiste Louis Paul environ soixante-dix vases. En 1917, il cède à Paul Dumas un premier lot d’aquarelles destinées aux tissus et aux papiers peints ; en 1920, avec le banquier Fernand Dumas, il fonde l’Atelier de la Dauphine, qui tisse des tapis d’après ses aquarelles. Ils passent au Salon d’automne de 1921, puis à l’Exposition internationale des arts décoratifs de 1925, l’année de sa mort. En 1922, il illustre de soixante-douze planches la *Mirèio* de Mistral.[^4] Plus il avance, moins il achète et plus il fabrique. La collection fut l’école ; le tapis, l’aboutissement.
+
+Suzanne Pagé, directrice artistique de la Fondation, le dit elle-même : à la différence de Chtchoukine ou de Courtauld, Fayet « n’a jamais eu d’objectif muséal ».[^8] La formule est juste, et l’exposition la contredit par son plan. En empilant trois étages de chefs-d’œuvre sous un quatrième d’arts décoratifs, elle rétablit la vieille hiérarchie des beaux-arts et des arts appliqués que Fayet, en exposant ses tapis au Salon puis en 1925, avait précisément voulu effacer. Le visiteur n’atteint le créateur qu’après trois étages de chefs-d’œuvre. Le parcours finit pourtant bien : dans une grande galerie, dix-neuf tapis sont tendus aux murs à côté de leurs plans de tissage, sous les vitraux de Burgsthal pour Fontfroide, dont une rosace de quatre mètres et demi.[^16] C’est la salle où Fayet cesse d’être un regard et devient une main. Il fallait commencer par elle.
+
+## Le miroir du bois de Boulogne
+
+Il faut regarder où l’on est. Une fondation née de la collection d’un seul homme consacre une série entière aux collectionneurs : Chtchoukine en 2016, Courtauld, les Morozov, désormais Fayet. Chaque fois, le même récit : un regard en avance sur les institutions, que l’institution finit par consacrer. La série tend un miroir flatteur à son hôte. Avec Fayet, le miroir se trouble. Le collectionneur montré ici n’a pas fondé de musée, n’a pas voulu léguer, n’a pas cherché à figer : il a acheté pour vendre, vendu pour bâtir, bâti pour créer.
+
+Benjamin terminait son texte en constatant que le collectionneur est un type humain en voie de disparition, et qu’une collection perd son sens avec son propriétaire.[^6] Celle de Fayet fut dispersée après sa mort, en 1925. L’exposition la présente comme réunie « pour la première fois depuis un siècle », et c’est en effet un tour de force : soixante-quatre institutions et soixante et onze collectionneurs privés ont prêté.[^14] Mais réunir est le geste d’une institution. Celui de Fayet était l’inverse : disperser pour faire autre chose. Le bâtiment même le dit. Frank Gehry a dessiné pour la Fondation une machine à expositions temporaires, des galeries sans attaches où tout arrive et tout repart. Fontfroide est son exact contraire : un lieu fait pour durer, où chaque décor répond à un mur. Transporter l’un dans l’autre, c’est faire passer Fayet de son œuvre à sa légende.
+
+Le *Châtaignier* mis en vente mercredi à New York lui est plus fidèle que les icônes accrochées au bois de Boulogne.
+
+À Fontfroide, pendant ce temps, la bibliothèque a perdu ses toiles. Les visiteurs y voient des murs nus, et sur la pierre les silhouettes que Redon avait recouvertes en 1911. C’est la seule pièce de l’exposition qu’on ne voit pas à Paris : un lieu dont on a ôté le trésor, et qui reste une œuvre.
+
+[^1]: Martin Bailey, « Newly identified: the most expensive Van Gogh was once owned by a highly distinguished early collector », *The Art Newspaper*, 23 octobre 2026. Achat noté dans le carnet de Fayet à la date du 9 janvier 1909 ; revente à Bernheim-Jeune avant novembre 1909 ; lettre à Paul Rosenberg d’avril 1909.
+[^2]: Sotheby’s, vente du soir « The Blaquier-Arrieta Collection », New York, 18 novembre 2026 ; estimation communiquée par Sotheby’s, reprise par *The Art Newspaper* (2 novembre 2026) et l’Associated Press (30 septembre 2026). Record actuel : *Verger avec cyprès*, Christie’s New York, 2022.
+[^3]: Communiqué de LVMH, « La Fondation Louis Vuitton consacre une exposition inédite à Gustave Fayet », 9 octobre 2026 : 728 œuvres et documents, dont dix Van Gogh, soixante-dix-huit Gauguin et quatre-vingt-six Redon ; scénographie de Robert Carsen ; deux catalogues coédités avec Gallimard. Le chiffre de 767, encore donné par certains guides, date des annonces de l’été (375 créations de Fayet annoncées) ; celui de 740 désigne la collection constituée par Fayet, hors estampes, et non l’exposition. Le décompte des Redon varie selon les sources (86 ou 88).
+[^4]: Association Musée d’art Gustave Fayet à Fontfroide, *Gustave Fayet. La saison du centenaire, 2025-2027*, dossier de presse, repères chronologiques.
+[^5]: Martin Bailey, « Louis Vuitton Foundation exhibition of ten Van Gogh paintings reveals extraordinary vision of early collector », *The Art Newspaper*, 9 octobre 2026.
+[^6]: Walter Benjamin, « Je déballe ma bibliothèque » (1931), dans *Je déballe ma bibliothèque. Une pratique de la collection*, trad. Philippe Ivernel, Paris, Rivages, « Rivages poche / Petite bibliothèque », 2000.
+[^7]: Roseline Bacou, « Paul Gauguin et Gustave Fayet », dans *Gauguin. Actes du colloque Gauguin*, Paris, musée d’Orsay, 11-13 janvier 1989, p. 25 ; cité dans la notice de provenance des *Meules en Bretagne*, National Gallery of Art, Washington.
+[^8]: « Van Gogh, Gauguin, Cézanne : cet automne, la Fondation Louis Vuitton dévoile une collection jamais vue en France depuis 1908 », *Paris Select Book*, 2026 (propos de Suzanne Pagé et Sylvie Patry).
+[^9]: Georges Bataille, « La notion de dépense », *La Critique sociale*, nᵒ 7, janvier 1933 ; repris dans *La Part maudite*, Paris, Minuit, 1967.
+[^10]: Ministère de la Culture, Inventaire général du patrimoine culturel, « Gustave Fayet à Fontfroide, un artiste en son abbaye », 11 février 2026 ; base Palissy, notice PM11003009.
+[^11]: Base Palissy, notice PM11003165 (décor de la bibliothèque de l’abbaye de Fontfroide). Dimensions de *Le Jour* : 200 × 650 cm.
+[^12]: « Hidden art works found at abbey by chance », *The Connexion*, 8 novembre 2026.
+[^13]: Commissariat : Sylvie Patry, conservatrice générale du patrimoine, commissaire générale ; Angeline Scherf, conservatrice à la Fondation Louis Vuitton, section « créateur ». Répartition des galeries d’après *Paris Select Book*, art. cité.
+[^14]: « À la Fondation Vuitton, les chefs-d’œuvre de la collection Gustave Fayet », *La Libre Belgique*, 26 octobre 2026 ; pour *Adam et Ève* : « Gustave Fayet, l’homme qui fit tout avec art ! », *L’Évasion des sens*, novembre 2026.
+[^15]: Propos de Sylvie Patry rapportés par *La Libre Belgique*, art. cité.
+[^16]: « Gustave Fayet. Fondation Louis Vuitton », *expo.paris*, novembre 2026 (compte rendu de visite) ; *contemporains.art*, « À Fontfroide, Odilon Redon et Gustave Fayet se répondent encore », octobre 2026.
+[^17]: Wildenstein Plattner Institute, *Paul Gauguin. Catalogue raisonné numérique*, notice *Te Arii Vahine* (W 542), provenance : Gustave Fayet, août 1903 ; Sergueï Chtchoukine, mai 1908 ; musée Pouchkine, Moscou, depuis 1948.
