@@ -1,4 +1,5 @@
 ---
+import { lien } from '../lib/lien';
 import { RUBRIQUES } from '../data/rubriques';
 import { dateDuJour } from '../lib/format';
 
@@ -7,8 +8,8 @@ const { grandTitre = false } = Astro.props;
 const chemin = Astro.url.pathname;
 const actif = (href: string) => chemin.startsWith(href);
 const liens = [
-  ...RUBRIQUES.map((r) => ({ href: `/rubriques/${r.id}/`, label: r.label })),
-  { href: '/agenda/', label: 'Agenda' },
+  ...RUBRIQUES.map((r) => ({ href: lien(`/rubriques/${r.id}/`), label: r.label })),
+  { href: lien('/agenda/'), label: 'Agenda' },
 ];
 ---
 {grandTitre ? (
@@ -16,12 +17,12 @@ const liens = [
     <div class="bandeau mono">
       <span>{dateDuJour(new Date())} — Paris</span>
       <div class="bandeau-actions">
-        <a href="/recherche/">Rechercher</a>
-        <a class="bouton" href="/#lettre">S’abonner à la lettre</a>
+        <a href={lien("/recherche/")}>Rechercher</a>
+        <a class="bouton" href={lien("/#lettre")}>S’abonner à la lettre</a>
       </div>
     </div>
     <header class="masthead">
-      <a href="/" class="logo-grand" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
+      <a href={lien("/")} class="logo-grand" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
       <div class="cartel-revue mono" aria-hidden="true">
         <div class="cr-nom">LE CARTEL</div>
         <div><i>Revue critique</i>, Paris, 2026</div>
@@ -33,24 +34,24 @@ const liens = [
       <ul>
         {liens.map((l) => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
       </ul>
-      <a class="loupe" href="/recherche/" aria-label="Rechercher">
+      <a class="loupe" href={lien("/recherche/")} aria-label="Rechercher">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
       </a>
     </nav>
   </>
 ) : (
   <header class="compact">
-    <a href="/" class="logo-petit" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
+    <a href={lien("/")} class="logo-petit" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
     <nav class="nav" aria-label="Rubriques">
       <ul>
         {liens.map((l) => <li><a href={l.href} aria-current={actif(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
       </ul>
     </nav>
     <div class="compact-actions">
-      <a class="loupe" href="/recherche/" aria-label="Rechercher">
+      <a class="loupe" href={lien("/recherche/")} aria-label="Rechercher">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
       </a>
-      <a class="bouton" href="/#lettre">S’abonner</a>
+      <a class="bouton" href={lien("/#lettre")}>S’abonner</a>
     </div>
   </header>
 )}

@@ -1,6 +1,7 @@
 import rss from '@astrojs/rss';
 import { articlesPublies } from '../lib/format';
 import { SITE } from '../data/site';
+import { lien } from '../lib/lien';
 
 export async function GET(context) {
   const articles = await articlesPublies();
@@ -15,7 +16,7 @@ export async function GET(context) {
       pubDate: a.data.date,
       author: a.data.auteur,
       categories: [a.data.rubrique, ...a.data.tags],
-      link: `/articles/${a.id}/`,
+      link: lien(`/articles/${a.id}/`),
     })),
   });
 }

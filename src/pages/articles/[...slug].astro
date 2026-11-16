@@ -1,4 +1,5 @@
 ---
+import { lien } from '../../lib/lien';
 import { getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Visuel from '../../components/Visuel.astro';
@@ -31,8 +32,8 @@ const imageOg = data.image?.src?.src;
   <article class="article" data-pagefind-body>
     <header class="tete">
       <div class="surtitre tete-surtitre">
-        <a href={`/rubriques/${r.id}/`}>{r.singulier}</a> · {data.sujet}
-        {dossier && <> · <a href={`/dossiers/${dossier.id}/`}>Dossier « {dossier.data.titre} »</a></>}
+        <a href={lien(`/rubriques/${r.id}/`)}>{r.singulier}</a> · {data.sujet}
+        {dossier && <> · <a href={lien(`/dossiers/${dossier.id}/`)}>Dossier « {dossier.data.titre} »</a></>}
       </div>
       <h1 data-pagefind-meta="title">{data.titre}</h1>
       <p class="chapo">{data.chapo}</p>

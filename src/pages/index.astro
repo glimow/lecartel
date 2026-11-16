@@ -1,4 +1,5 @@
 ---
+import { lien } from '../lib/lien';
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Visuel from '../components/Visuel.astro';
@@ -31,13 +32,13 @@ const agenda = (await agendaEnCours()).slice(0, 7);
 <Base grandTitre>
   {une && (
     <section class="une" aria-label="À la une">
-      <a href={`/articles/${une.id}/`} class="une-visuel" tabindex="-1" aria-hidden="true">
+      <a href={lien(`/articles/${une.id}/`)} class="une-visuel" tabindex="-1" aria-hidden="true">
         <Visuel visuel={une.data.image} hauteur="620px" sizes="(max-width: 1000px) 100vw, 58vw" prioritaire />
       </a>
       <div class="une-texte">
         <div>
           <div class="surtitre une-surtitre">À la une — {rubrique(une.data.rubrique).singulier} · {une.data.sujet}</div>
-          <h2><a href={`/articles/${une.id}/`}>{une.data.titre}</a></h2>
+          <h2><a href={lien(`/articles/${une.id}/`)}>{une.data.titre}</a></h2>
           <p class="chapo">{une.data.chapo}</p>
         </div>
         <div>
@@ -66,7 +67,7 @@ const agenda = (await agendaEnCours()).slice(0, 7);
         <div class="surtitre clair">Rubrique — Le cartel de la semaine</div>
         <h2 id="cartel-titre">{cartel.data.titre}</h2>
         <p>{cartel.data.chapo}</p>
-        <a class="bouton blanc" href={`/cartels/${cartel.id}/`}>Lire le cartel</a>
+        <a class="bouton blanc" href={lien(`/cartels/${cartel.id}/`)}>Lire le cartel</a>
       </div>
       <div class="bande-cartel">
         <div class="etiquette">
@@ -85,19 +86,19 @@ const agenda = (await agendaEnCours()).slice(0, 7);
   {dossier && (
     <section class="dossier" aria-labelledby="dossier-titre">
       <div class="dossier-tete">
-        <h2 id="dossier-titre"><a href={`/dossiers/${dossier.id}/`}>Dossier — {dossier.data.titre}</a></h2>
+        <h2 id="dossier-titre"><a href={lien(`/dossiers/${dossier.id}/`)}>Dossier — {dossier.data.titre}</a></h2>
         <span class="meta">{articlesDossier.length} article{articlesDossier.length > 1 ? 's' : ''} · mis à jour le {dateCourte(dossier.data.date)}</span>
       </div>
       <div class="dossier-corps">
         <div class="dossier-principal">
           {tete ? (
             <>
-              <a href={`/articles/${tete.id}/`} class="dossier-visuel" tabindex="-1" aria-hidden="true">
+              <a href={lien(`/articles/${tete.id}/`)} class="dossier-visuel" tabindex="-1" aria-hidden="true">
                 <Visuel visuel={tete.data.image} hauteur="340px" largeurs={[400, 700]} sizes="(max-width: 760px) 100vw, 30vw" />
               </a>
               <div class="dossier-article">
                 <div class="surtitre">{rubrique(tete.data.rubrique).singulier} · {tete.data.sujet}</div>
-                <h3><a href={`/articles/${tete.id}/`}>{tete.data.titre}</a></h3>
+                <h3><a href={lien(`/articles/${tete.id}/`)}>{tete.data.titre}</a></h3>
                 <p>{tete.data.chapo}</p>
                 <div class="meta">Par {tete.data.auteur}</div>
               </div>
@@ -128,7 +129,7 @@ const agenda = (await agendaEnCours()).slice(0, 7);
           <span class="numero">{String(i + 1).padStart(2, '0')}</span>
           <div class="ligne-texte">
             <div class="mono ligne-surtitre">{rubrique(a.data.rubrique).singulier} · {a.data.sujet}</div>
-            <h3><a href={`/articles/${a.id}/`}>{a.data.titre}</a></h3>
+            <h3><a href={lien(`/articles/${a.id}/`)}>{a.data.titre}</a></h3>
             <p>{a.data.chapo}</p>
           </div>
         </article>
@@ -137,7 +138,7 @@ const agenda = (await agendaEnCours()).slice(0, 7);
     <aside class="bas-agenda" aria-labelledby="agenda-titre">
       <h2 class="titre-section" id="agenda-titre">Agenda — à voir</h2>
       <ListeAgenda evenements={agenda} />
-      <a href="/agenda/" class="mono tout">Tout l’agenda →</a>
+      <a href={lien("/agenda/")} class="mono tout">Tout l’agenda →</a>
     </aside>
   </section>
 

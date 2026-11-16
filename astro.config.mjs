@@ -4,7 +4,9 @@ import sitemap from '@astrojs/sitemap';
 import { rehypeCartel } from './src/lib/rehype-cartel.js';
 
 export default defineConfig({
-  site: 'https://lecartel.art',
+  // Surchargés par l’aperçu GitHub Pages (voir .github/workflows/pages.yml)
+  site: process.env.SITE_URL ?? 'https://lecartel.art',
+  base: process.env.BASE_PATH ?? '/',
   trailingSlash: 'ignore',
   integrations: [sitemap()],
   markdown: {

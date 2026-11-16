@@ -1,33 +1,34 @@
 ---
+import { lien } from '../lib/lien';
 import { RUBRIQUES } from '../data/rubriques';
 import { SITE } from '../data/site';
 ---
 <footer class="pied">
   <div class="pied-marque">
-    <a href="/" class="pied-logo">Le Cartel<span class="point">.</span></a>
+    <a href={lien("/")} class="pied-logo">Le Cartel<span class="point">.</span></a>
     <p>{SITE.description}</p>
   </div>
   <nav aria-label="Pied de page" class="pied-nav mono">
     <div>
       <span>Rubriques</span>
-      {RUBRIQUES.slice(0, 4).map((r) => <a href={`/rubriques/${r.id}/`}>{r.label}</a>)}
+      {RUBRIQUES.slice(0, 4).map((r) => <a href={lien(`/rubriques/${r.id}/`)}>{r.label}</a>)}
     </div>
     <div>
       <span>La revue</span>
-      <a href="/a-propos/">À propos</a>
-      <a href="/cartels/">Les cartels</a>
-      <a href="/agenda/">Agenda</a>
-      <a href="/#lettre">La lettre</a>
+      <a href={lien("/a-propos/")}>À propos</a>
+      <a href={lien("/cartels/")}>Les cartels</a>
+      <a href={lien("/agenda/")}>Agenda</a>
+      <a href={lien("/#lettre")}>La lettre</a>
     </div>
     <div>
       <span>Suivre</span>
       {SITE.reseaux.map((r) => <a href={r.href}>{r.label}</a>)}
-      <a href="/rss.xml">Flux RSS</a>
+      <a href={lien("/rss.xml")}>Flux RSS</a>
     </div>
   </nav>
   <div class="pied-bas mono">
     <span>© {new Date().getFullYear()} {SITE.nom} — {SITE.domaine}</span>
-    <a href="/mentions-legales/">Mentions légales</a>
+    <a href={lien("/mentions-legales/")}>Mentions légales</a>
   </div>
 </footer>
 

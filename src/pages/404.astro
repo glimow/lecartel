@@ -1,4 +1,5 @@
 ---
+import { lien } from '../lib/lien';
 import Base from '../layouts/Base.astro';
 ---
 <Base titre="Œuvre introuvable">
@@ -12,7 +13,7 @@ import Base from '../layouts/Base.astro';
         <div class="gris">Œuvre perdue ou jamais réalisée</div>
       </div>
     </div>
-    <a href="/" class="bouton">Retour à l’accueil</a>
+    <a href={lien("/")} class="bouton">Retour à l’accueil</a>
   </section>
 </Base>
 

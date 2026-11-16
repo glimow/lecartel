@@ -94,3 +94,10 @@ src/
   lib/rehype-cartel.js← notes en marge, exergues, légendes d’images
   components/ layouts/ pages/ styles/
 ```
+
+## Aperçu sur GitHub Pages
+
+Chaque push sur `main` (et chaque nuit à 4 h 17 UTC) publie un aperçu sur
+https://glimow.github.io/lecartel/ via `.github/workflows/pages.yml`.
+Le chemin `/lecartel` est géré par les variables `SITE_URL` et `BASE_PATH` :
+dans les composants, écrire les liens internes avec `lien('/chemin/')` (`src/lib/lien.ts`).

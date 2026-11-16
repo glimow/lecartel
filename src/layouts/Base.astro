@@ -1,4 +1,5 @@
 ---
+import { lien } from '../lib/lien';
 import '../styles/global.css';
 import { SITE } from '../data/site';
 import EnTete from '../components/EnTete.astro';
@@ -24,9 +25,9 @@ const canonique = new URL(Astro.url.pathname, Astro.site);
     <title>{titreComplet}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonique} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate" type="application/rss+xml" title={SITE.nom} href="/rss.xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href={lien("/favicon.svg")} type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.nom} href={lien("/rss.xml")} />
+    <link rel="sitemap" href={lien("/sitemap-index.xml")} />
     <meta property="og:site_name" content={SITE.nom} />
     <meta property="og:title" content={titre ?? SITE.nom} />
     <meta property="og:description" content={description} />

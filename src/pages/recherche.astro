@@ -1,4 +1,5 @@
 ---
+import { lien } from '../lib/lien';
 import Base from '../layouts/Base.astro';
 ---
 <Base titre="Rechercher">
@@ -7,8 +8,8 @@ import Base from '../layouts/Base.astro';
   </header>
   <div id="recherche" class="recherche"></div>
   <noscript><p>La recherche nécessite JavaScript.</p></noscript>
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <link href={lien("/pagefind/pagefind-ui.css")} rel="stylesheet" />
+  <script is:inline src={lien("/pagefind/pagefind-ui.js")}></script>
   <script is:inline>
     window.addEventListener('DOMContentLoaded', () => {
       if (!window.PagefindUI) {

@@ -1,4 +1,5 @@
 ---
+import { lien } from '../../lib/lien';
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Visuel from '../../components/Visuel.astro';
@@ -16,7 +17,7 @@ const { Content } = await render(cartel);
 <Base titre={data.titre} description={data.chapo} type="article">
   <article data-pagefind-body>
     <header class="tete">
-      <div class="surtitre"><a href="/cartels/">Le cartel de la semaine</a></div>
+      <div class="surtitre"><a href={lien("/cartels/")}>Le cartel de la semaine</a></div>
       <h1>{data.titre}</h1>
       <p class="chapo">{data.chapo}</p>
       <div class="meta">Par {data.auteur} · <time datetime={data.date.toISOString()}>{dateLongue(data.date)}</time></div>

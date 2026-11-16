@@ -1,4 +1,5 @@
 ---
+import { lien } from '../../lib/lien';
 import Base from '../../layouts/Base.astro';
 import { cartelsPublies, dateLongue } from '../../lib/format';
 const cartels = await cartelsPublies();
@@ -11,7 +12,7 @@ const cartels = await cartelsPublies();
   <ul class="liste">
     {cartels.map((c) => (
       <li>
-        <a href={`/cartels/${c.id}/`} class="etiquette">
+        <a href={lien(`/cartels/${c.id}/`)} class="etiquette">
           <span class="et-artiste">{c.data.artiste}</span>
           <span class="et-oeuvre">{c.data.oeuvre}</span>
           <span class="mono et-details">{c.data.technique}</span>
