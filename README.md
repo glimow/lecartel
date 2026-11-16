@@ -101,3 +101,15 @@ Chaque push sur `main` (et chaque nuit à 4 h 17 UTC) publie un aperçu sur
 https://glimow.github.io/lecartel/ via `.github/workflows/pages.yml`.
 Le chemin `/lecartel` est géré par les variables `SITE_URL` et `BASE_PATH` :
 dans les composants, écrire les liens internes avec `lien('/chemin/')` (`src/lib/lien.ts`).
+
+## Polices
+
+Les polices sont servies depuis `src/assets/fonts/`, réduites aux caractères du français et aux graisses utilisées (≈ 200 Ko au lieu de ≈ 400 Ko). Pour utiliser une nouvelle graisse ou des caractères non latins, relancer `scripts/polices.sh` après avoir ajusté ses paramètres.
+
+## Partage sur les réseaux
+
+Chaque article avec une image génère automatiquement une vignette de partage 1200 × 630. Sans image, c’est `public/og-defaut.png` qui est utilisée.
+
+## Rubriques vides
+
+Une rubrique sans article publié disparaît automatiquement des menus et n’a pas de page. Elle réapparaît dès son premier article.

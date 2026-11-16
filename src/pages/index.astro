@@ -33,7 +33,7 @@ const agenda = (await agendaEnCours()).slice(0, 7);
   {une && (
     <section class="une" aria-label="À la une">
       <a href={lien(`/articles/${une.id}/`)} class="une-visuel" tabindex="-1" aria-hidden="true">
-        <Visuel visuel={une.data.image} hauteur="620px" sizes="(max-width: 1000px) 100vw, 58vw" prioritaire />
+        <Visuel visuel={une.data.image} hauteur="620px" sizes="(max-width: 1100px) 100vw, 60vw" prioritaire />
       </a>
       <div class="une-texte">
         <div>
@@ -94,7 +94,7 @@ const agenda = (await agendaEnCours()).slice(0, 7);
           {tete ? (
             <>
               <a href={lien(`/articles/${tete.id}/`)} class="dossier-visuel" tabindex="-1" aria-hidden="true">
-                <Visuel visuel={tete.data.image} hauteur="340px" largeurs={[400, 700]} sizes="(max-width: 760px) 100vw, 30vw" />
+                <Visuel visuel={tete.data.image} hauteur="340px" largeurs={[400, 700, 1000]} sizes="(max-width: 760px) 100vw, 40vw" />
               </a>
               <div class="dossier-article">
                 <div class="surtitre">{rubrique(tete.data.rubrique).singulier} · {tete.data.sujet}</div>
@@ -209,5 +209,6 @@ const agenda = (await agendaEnCours()).slice(0, 7);
   .ligne-surtitre { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris); margin-bottom: 8px; }
   .ligne h3 { margin: 0 0 8px; font-size: 28px; line-height: 1.15; font-weight: 400; }
   .ligne p { margin: 0; font-size: 17px; line-height: 1.5; color: var(--texte); }
+  @media (max-width: 760px) { .une { padding: 28px 0 48px; gap: 28px; } }
   .tout { display: inline-block; margin-top: 8px; padding: 12px 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
 </style>

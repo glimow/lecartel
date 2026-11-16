@@ -6,7 +6,8 @@ import { articlesPublies } from '../../lib/format';
 
 export async function getStaticPaths() {
   const articles = await articlesPublies();
-  return RUBRIQUES.map((r) => ({
+  // Pas de page pour une rubrique encore vide
+  return RUBRIQUES.filter((r) => articles.some((a) => a.data.rubrique === r.id)).map((r) => ({
     params: { rubrique: r.id },
     props: { r, articles: articles.filter((a) => a.data.rubrique === r.id) },
   }));

@@ -4,6 +4,7 @@ import '../styles/global.css';
 import { SITE } from '../data/site';
 import EnTete from '../components/EnTete.astro';
 import PiedDePage from '../components/PiedDePage.astro';
+import policeTexte from '../assets/fonts/newsreader-opsz-normal.woff2?url';
 
 interface Props {
   titre?: string;
@@ -16,6 +17,8 @@ interface Props {
 const { titre, description = SITE.description, image, grandTitre = false, type = 'website' } = Astro.props;
 const titreComplet = titre ? `${titre} — ${SITE.nom}` : `${SITE.nom} — ${SITE.description}`;
 const canonique = new URL(Astro.url.pathname, Astro.site);
+// Image de partage : celle de l’article, sinon la carte par défaut de la revue
+const imagePartage = new URL(image ?? lien('/og-defaut.png'), Astro.site);
 ---
 <!doctype html>
 <html lang="fr">
@@ -25,6 +28,7 @@ const canonique = new URL(Astro.url.pathname, Astro.site);
     <title>{titreComplet}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonique} />
+    <link rel="preload" href={policeTexte} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href={lien("/favicon.svg")} type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE.nom} href={lien("/rss.xml")} />
     <link rel="sitemap" href={lien("/sitemap-index.xml")} />
@@ -34,8 +38,9 @@ const canonique = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:type" content={type} />
     <meta property="og:url" content={canonique} />
     <meta property="og:locale" content="fr_FR" />
-    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
-    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta property="og:image" content={imagePartage} />
+    <meta property="og:image:alt" content={titre ?? SITE.nom} />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <a class="visually-hidden" href="#contenu">Aller au contenu</a>

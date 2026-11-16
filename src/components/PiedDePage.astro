@@ -1,6 +1,6 @@
 ---
 import { lien } from '../lib/lien';
-import { RUBRIQUES } from '../data/rubriques';
+import { rubriquesActives } from '../lib/rubriques-actives';
 import { SITE } from '../data/site';
 ---
 <footer class="pied">
@@ -11,7 +11,7 @@ import { SITE } from '../data/site';
   <nav aria-label="Pied de page" class="pied-nav mono">
     <div>
       <span>Rubriques</span>
-      {RUBRIQUES.slice(0, 4).map((r) => <a href={lien(`/rubriques/${r.id}/`)}>{r.label}</a>)}
+      {(await rubriquesActives()).slice(0, 5).map((r) => <a href={lien(`/rubriques/${r.id}/`)}>{r.label}</a>)}
     </div>
     <div>
       <span>La revue</span>

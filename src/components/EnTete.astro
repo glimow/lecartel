@@ -1,6 +1,6 @@
 ---
 import { lien } from '../lib/lien';
-import { RUBRIQUES } from '../data/rubriques';
+import { rubriquesActives } from '../lib/rubriques-actives';
 import { dateDuJour } from '../lib/format';
 
 interface Props { grandTitre?: boolean }
@@ -8,7 +8,7 @@ const { grandTitre = false } = Astro.props;
 const chemin = Astro.url.pathname;
 const actif = (href: string) => chemin.startsWith(href);
 const liens = [
-  ...RUBRIQUES.map((r) => ({ href: lien(`/rubriques/${r.id}/`), label: r.label })),
+  ...(await rubriquesActives()).map((r) => ({ href: lien(`/rubriques/${r.id}/`), label: r.label })),
   { href: lien('/agenda/'), label: 'Agenda' },
 ];
 ---
@@ -22,7 +22,7 @@ const liens = [
       </div>
     </div>
     <header class="masthead">
-      <a href={lien("/")} class="logo-grand" aria-label="Le Cartel, accueil">Le Cartel<span class="point">.</span></a>
+      <h1 class="logo-h1"><a href={lien("/")} class="logo-grand">Le Cartel<span class="point" aria-hidden="true">.</span><span class="visually-hidden"> — revue critique d’art contemporain et de design, Paris</span></a></h1>
       <div class="cartel-revue mono" aria-hidden="true">
         <div class="cr-nom">LE CARTEL</div>
         <div><i>Revue critique</i>, Paris, 2026</div>
@@ -62,12 +62,14 @@ const liens = [
     padding: 12px 0; font-size: 12px; color: var(--gris); border-bottom: 1px solid var(--filet);
   }
   .bandeau-actions { display: flex; gap: 20px; align-items: center; }
-  .bandeau-actions .bouton { padding: 10px 16px; min-height: 0; }
+  .bandeau-actions .bouton { padding: 10px 16px; }
   .masthead {
     display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px;
     padding: 40px 0 28px;
   }
+  .logo-h1 { margin: 0; font-weight: 400; font-size: inherit; }
   .logo-grand {
+    display: inline-block;
     font-size: clamp(76px, 12vw, 168px); line-height: 0.86; font-weight: 400; letter-spacing: -0.035em;
   }
   .logo-grand:hover, .logo-petit:hover { color: var(--encre); }
@@ -96,7 +98,7 @@ const liens = [
     display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 32px;
     border-bottom: 2px solid var(--encre); padding: 12px 0;
   }
-  .logo-petit { font-size: 40px; line-height: 1; letter-spacing: -0.03em; }
+  .logo-petit { font-size: 40px; line-height: 1; letter-spacing: -0.03em; display: inline-flex; align-items: center; min-height: 44px; }
   .compact-actions { display: flex; align-items: center; gap: 8px; }
   .compact-actions .bouton { padding: 12px 16px; }
 
@@ -110,10 +112,15 @@ const liens = [
     }
     .nav ul::-webkit-scrollbar { display: none; }
     .nav li { flex: 0 0 auto; }
+    .nav a { padding: 16px 0; }
     .compact { padding-bottom: 0; }
     .compact .nav { border-top: 1px solid var(--filet); }
     .logo-petit { font-size: 32px; }
+    .bandeau { padding: 8px 0; }
     .bandeau-actions > a:first-child { display: none; }
-    .masthead { padding: 28px 0 20px; gap: 20px; }
+    .bandeau-actions .bouton { padding: 12px 14px; }
+    .masthead { padding: 20px 0 16px; }
+    .logo-grand { font-size: 64px; }
+    .cartel-revue { display: none; }
   }
 </style>

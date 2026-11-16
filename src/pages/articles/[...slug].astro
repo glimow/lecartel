@@ -1,6 +1,7 @@
 ---
 import { lien } from '../../lib/lien';
 import { getEntry, render } from 'astro:content';
+import { getImage } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Visuel from '../../components/Visuel.astro';
 import CarteArticle from '../../components/CarteArticle.astro';
@@ -26,7 +27,10 @@ const score = (a: typeof article) =>
   a.data.tags.filter((t) => data.tags.includes(t)).length * 10 +
   (a.data.rubrique === data.rubrique ? 5 : 0);
 const lireAussi = [...autres].sort((a, b) => score(b) - score(a) || b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
-const imageOg = data.image?.src?.src;
+// Image de partage 1200 × 630 recadrée (format attendu par les réseaux sociaux)
+const imageOg = data.image?.src
+  ? (await getImage({ src: data.image.src, width: 1200, height: 630, fit: 'cover', format: 'jpg', quality: 82 })).src
+  : undefined;
 ---
 <Base titre={data.titre} description={data.chapo} image={imageOg} type="article">
   <article class="article" data-pagefind-body>
