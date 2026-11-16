@@ -4,7 +4,7 @@ chapo: "« Look ! 40 ans de mode au musée » : quarante silhouettes vidées de 
 rubrique: design
 sujet: Mode
 date: 2026-11-10
-auteur: "Irène"
+auteur: "Clémence"
 image:
   src: ./images/pavillon-de-marsan.jpg
   alt: "Le pavillon de Marsan, siège du musée des Arts décoratifs, vu du jardin des Tuileries"

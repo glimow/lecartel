@@ -4,7 +4,7 @@ chapo: "Le Prix Marcel Duchamp 2026 couronne quatre machines de fête foraine re
 rubrique: critiques
 sujet: Prix Marcel Duchamp
 date: 2026-11-16
-auteur: "Irène"
+auteur: "Clémence"
 brouillon: false
 image:
   src: ./images/duchamp-obligation-monte-carlo.jpg
