@@ -95,11 +95,14 @@ src/
   components/ layouts/ pages/ styles/
 ```
 
-## Aperçu sur GitHub Pages
+## Publication sur GitHub Pages
 
-Chaque push sur `main` (et chaque nuit à 4 h 17 UTC) publie un aperçu sur
-https://glimow.github.io/lecartel/ via `.github/workflows/pages.yml`.
-Le chemin `/lecartel` est géré par les variables `SITE_URL` et `BASE_PATH` :
+Chaque push sur `main` (et chaque nuit à 4 h 17 UTC) publie le site sur
+https://lecartel.art/ via `.github/workflows/pages.yml` (domaine personnalisé
+réglé dans Settings → Pages ; DNS chez GoDaddy : 4 enregistrements A vers
+185.199.108–111.153 et `www` en CNAME vers `glimow.github.io`).
+L’adresse est gérée par les variables `SITE_URL` et `BASE_PATH`. Pour publier
+sous un sous-chemin (par exemple `/lecartel`), changer `BASE_PATH` :
 dans les composants, écrire les liens internes avec `lien('/chemin/')` (`src/lib/lien.ts`).
 
 ## Polices

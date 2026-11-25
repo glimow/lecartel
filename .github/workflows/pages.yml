@@ -1,4 +1,4 @@
-# Aperçu du site sur GitHub Pages : https://glimow.github.io/lecartel/
+# Site publié sur GitHub Pages : https://lecartel.art/
 # Reconstruit à chaque push sur main, et chaque nuit (date du jour, agenda).
 name: Aperçu GitHub Pages
 
@@ -30,8 +30,8 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          SITE_URL: https://glimow.github.io
-          BASE_PATH: /lecartel
+          SITE_URL: https://lecartel.art
+          BASE_PATH: /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
